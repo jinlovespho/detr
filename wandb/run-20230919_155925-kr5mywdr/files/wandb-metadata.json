@@ -1,0 +1,148 @@
+{
+    "os": "Linux-5.15.0-83-generic-x86_64-with-glibc2.31",
+    "python": "3.9.17",
+    "heartbeatAt": "2023-09-19T06:59:26.307298",
+    "startedAt": "2023-09-19T06:59:25.554953",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--batch_size",
+        "4",
+        "--epochs",
+        "300",
+        "--enc_layers",
+        "6",
+        "--dec_layers",
+        "6",
+        "--hidden_dim",
+        "256",
+        "--num_queries",
+        "100",
+        "--coco_path",
+        "/mnt/ssd2/dataset/coco/",
+        "--output_dir",
+        "./train_results/20230919/LOCAL_size5k_batch4_epoch300_enc6_dec6_hdim256_query100",
+        "--wdb_entity_name",
+        "jinlovespho",
+        "--wdb_proj_name",
+        "LIGNex1_coco_reduced",
+        "--wdb_run_name",
+        "LOCAL_officialDETR_size5k_batch4_epoch300_enc6_dec6_hdim256_query100"
+    ],
+    "state": "running",
+    "program": "/home/kwangrok/Downloads/VS_CODE/my_github/detr/main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/jinlovespho/detr.git",
+        "commit": "3af9fa878e73b6894ce3596450a8d9b89d918ca9"
+    },
+    "email": "msjchr922@gmail.com",
+    "root": "/home/kwangrok/Downloads/VS_CODE/my_github/detr",
+    "host": "jinlovespho",
+    "username": "kwangrok",
+    "executable": "/home/kwangrok/anaconda3/envs/mm_torch113/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2.981874999999999,
+        "min": 800.0,
+        "max": 4800.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2.9,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4.21,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2.9,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2.9,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2.9,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2.9,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2.9,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2.9,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2.9,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2.9,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2.9,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2.9,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2.9,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2.9,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2.9,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 2.9,
+            "min": 800.0,
+            "max": 4800.0
+        }
+    ],
+    "disk": {
+        "total": 456.8854446411133,
+        "used": 399.3529281616211
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 31.256961822509766
+    }
+}

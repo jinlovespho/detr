@@ -1,0 +1,167 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.9.17
+    cli_version: 0.15.8
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1695106886.009053
+    t:
+      1:
+      - 1
+      - 41
+      - 51
+      - 55
+      2:
+      - 1
+      - 41
+      - 51
+      - 55
+      3:
+      - 13
+      - 23
+      4: 3.9.17
+      5: 0.15.8
+      8:
+      - 5
+lr:
+  desc: null
+  value: 0.0001
+lr_backbone:
+  desc: null
+  value: 1.0e-05
+batch_size:
+  desc: null
+  value: 4
+weight_decay:
+  desc: null
+  value: 0.0001
+epochs:
+  desc: null
+  value: 300
+lr_drop:
+  desc: null
+  value: 200
+clip_max_norm:
+  desc: null
+  value: 0.1
+frozen_weights:
+  desc: null
+  value: null
+backbone:
+  desc: null
+  value: resnet50
+dilation:
+  desc: null
+  value: false
+position_embedding:
+  desc: null
+  value: sine
+enc_layers:
+  desc: null
+  value: 6
+dec_layers:
+  desc: null
+  value: 6
+dim_feedforward:
+  desc: null
+  value: 2048
+hidden_dim:
+  desc: null
+  value: 256
+dropout:
+  desc: null
+  value: 0.1
+nheads:
+  desc: null
+  value: 8
+num_queries:
+  desc: null
+  value: 100
+pre_norm:
+  desc: null
+  value: false
+masks:
+  desc: null
+  value: false
+aux_loss:
+  desc: null
+  value: true
+set_cost_class:
+  desc: null
+  value: 1
+set_cost_bbox:
+  desc: null
+  value: 5
+set_cost_giou:
+  desc: null
+  value: 2
+mask_loss_coef:
+  desc: null
+  value: 1
+dice_loss_coef:
+  desc: null
+  value: 1
+bbox_loss_coef:
+  desc: null
+  value: 5
+giou_loss_coef:
+  desc: null
+  value: 2
+eos_coef:
+  desc: null
+  value: 0.1
+dataset_file:
+  desc: null
+  value: coco
+coco_path:
+  desc: null
+  value: /mnt/ssd2/dataset/coco/
+coco_panoptic_path:
+  desc: null
+  value: null
+remove_difficult:
+  desc: null
+  value: false
+output_dir:
+  desc: null
+  value: ./train_results/20230919/LOCAL_size5k_batch4_epoch300_enc6_dec6_hdim256_query100
+device:
+  desc: null
+  value: cuda
+seed:
+  desc: null
+  value: 42
+resume:
+  desc: null
+  value: ''
+start_epoch:
+  desc: null
+  value: 0
+eval:
+  desc: null
+  value: false
+num_workers:
+  desc: null
+  value: 2
+world_size:
+  desc: null
+  value: 1
+dist_url:
+  desc: null
+  value: env://
+wdb_entity_name:
+  desc: null
+  value: jinlovespho
+wdb_proj_name:
+  desc: null
+  value: LIGNex1_coco_reduced
+wdb_run_name:
+  desc: null
+  value: LOCAL_officialDETR_size5k_batch4_epoch300_enc6_dec6_hdim256_query100
+distributed:
+  desc: null
+  value: false

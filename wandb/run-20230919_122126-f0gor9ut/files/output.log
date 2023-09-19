@@ -1,0 +1,1236 @@
+Start training
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(32)train_one_epoch()
+-> for samples, targets in metric_logger.log_every(data_loader, print_freq, header):
+['criterion', 'data_loader', 'device', 'epoch', 'header', 'max_norm', 'metric_logger', 'model', 'optimizer', 'print_freq']
+SetCriterion(
+  (matcher): HungarianMatcher()
+)
+<torch.utils.data.dataloader.DataLoader object at 0x7f6f98cc96d0>
+device(type='cuda')
+0
+'Epoch: [0]'
+0.1
+['criterion', 'data_loader', 'device', 'epoch', 'header', 'max_norm', 'metric_logger', 'model', 'optimizer', 'print_freq']
+DETR(
+  (transformer): Transformer(
+    (encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+        (1): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+        (2): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+        (3): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+        (4): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+        (5): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (decoder): TransformerDecoder(
+      (layers): ModuleList(
+        (0): TransformerDecoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (multihead_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (norm3): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+          (dropout3): Dropout(p=0.1, inplace=False)
+        )
+        (1): TransformerDecoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (multihead_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (norm3): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+          (dropout3): Dropout(p=0.1, inplace=False)
+        )
+        (2): TransformerDecoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (multihead_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (norm3): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+          (dropout3): Dropout(p=0.1, inplace=False)
+        )
+        (3): TransformerDecoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (multihead_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (norm3): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+          (dropout3): Dropout(p=0.1, inplace=False)
+        )
+        (4): TransformerDecoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (multihead_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (norm3): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+          (dropout3): Dropout(p=0.1, inplace=False)
+        )
+        (5): TransformerDecoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (multihead_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+          )
+          (linear1): Linear(in_features=256, out_features=2048, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=2048, out_features=256, bias=True)
+          (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (norm3): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+          (dropout3): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+  (class_embed): Linear(in_features=256, out_features=92, bias=True)
+  (bbox_embed): MLP(
+    (layers): ModuleList(
+      (0): Linear(in_features=256, out_features=256, bias=True)
+      (1): Linear(in_features=256, out_features=256, bias=True)
+      (2): Linear(in_features=256, out_features=4, bias=True)
+    )
+  )
+  (query_embed): Embedding(100, 256)
+  (input_proj): Conv2d(2048, 256, kernel_size=(1, 1), stride=(1, 1))
+  (backbone): Joiner(
+    (0): Backbone(
+      (body): IntermediateLayerGetter(
+        (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+        (bn1): FrozenBatchNorm2d()
+        (relu): ReLU(inplace=True)
+        (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+        (layer1): Sequential(
+          (0): Bottleneck(
+            (conv1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn1): FrozenBatchNorm2d()
+            (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (bn2): FrozenBatchNorm2d()
+            (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn3): FrozenBatchNorm2d()
+            (relu): ReLU(inplace=True)
+            (downsample): Sequential(
+              (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+              (1): FrozenBatchNorm2d()
+            )
+          )
+          (1): Bottleneck(
+            (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn1): FrozenBatchNorm2d()
+            (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (bn2): FrozenBatchNorm2d()
+            (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn3): FrozenBatchNorm2d()
+            (relu): ReLU(inplace=True)
+          )
+          (2): Bottleneck(
+            (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn1): FrozenBatchNorm2d()
+            (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (bn2): FrozenBatchNorm2d()
+            (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn3): FrozenBatchNorm2d()
+            (relu): ReLU(inplace=True)
+          )
+        )
+        (layer2): Sequential(
+          (0): Bottleneck(
+            (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn1): FrozenBatchNorm2d()
+            (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+            (bn2): FrozenBatchNorm2d()
+            (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn3): FrozenBatchNorm2d()
+            (relu): ReLU(inplace=True)
+            (downsample): Sequential(
+              (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+              (1): FrozenBatchNorm2d()
+            )
+          )
+          (1): Bottleneck(
+            (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn1): FrozenBatchNorm2d()
+            (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (bn2): FrozenBatchNorm2d()
+            (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn3): FrozenBatchNorm2d()
+            (relu): ReLU(inplace=True)
+          )
+          (2): Bottleneck(
+            (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn1): FrozenBatchNorm2d()
+            (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (bn2): FrozenBatchNorm2d()
+            (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn3): FrozenBatchNorm2d()
+            (relu): ReLU(inplace=True)
+          )
+          (3): Bottleneck(
+            (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn1): FrozenBatchNorm2d()
+            (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (bn2): FrozenBatchNorm2d()
+            (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn3): FrozenBatchNorm2d()
+            (relu): ReLU(inplace=True)
+          )
+        )
+        (layer3): Sequential(
+          (0): Bottleneck(
+            (conv1): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn1): FrozenBatchNorm2d()
+            (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+            (bn2): FrozenBatchNorm2d()
+            (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn3): FrozenBatchNorm2d()
+            (relu): ReLU(inplace=True)
+            (downsample): Sequential(
+              (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+              (1): FrozenBatchNorm2d()
+            )
+          )
+          (1): Bottleneck(
+            (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn1): FrozenBatchNorm2d()
+            (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (bn2): FrozenBatchNorm2d()
+            (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn3): FrozenBatchNorm2d()
+            (relu): ReLU(inplace=True)
+          )
+          (2): Bottleneck(
+            (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn1): FrozenBatchNorm2d()
+            (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (bn2): FrozenBatchNorm2d()
+            (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn3): FrozenBatchNorm2d()
+            (relu): ReLU(inplace=True)
+          )
+          (3): Bottleneck(
+            (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn1): FrozenBatchNorm2d()
+            (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (bn2): FrozenBatchNorm2d()
+            (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn3): FrozenBatchNorm2d()
+            (relu): ReLU(inplace=True)
+          )
+          (4): Bottleneck(
+            (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn1): FrozenBatchNorm2d()
+            (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (bn2): FrozenBatchNorm2d()
+            (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn3): FrozenBatchNorm2d()
+            (relu): ReLU(inplace=True)
+          )
+          (5): Bottleneck(
+            (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn1): FrozenBatchNorm2d()
+            (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (bn2): FrozenBatchNorm2d()
+            (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn3): FrozenBatchNorm2d()
+            (relu): ReLU(inplace=True)
+          )
+        )
+        (layer4): Sequential(
+          (0): Bottleneck(
+            (conv1): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn1): FrozenBatchNorm2d()
+            (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+            (bn2): FrozenBatchNorm2d()
+            (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn3): FrozenBatchNorm2d()
+            (relu): ReLU(inplace=True)
+            (downsample): Sequential(
+              (0): Conv2d(1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False)
+              (1): FrozenBatchNorm2d()
+            )
+          )
+          (1): Bottleneck(
+            (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn1): FrozenBatchNorm2d()
+            (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (bn2): FrozenBatchNorm2d()
+            (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn3): FrozenBatchNorm2d()
+            (relu): ReLU(inplace=True)
+          )
+          (2): Bottleneck(
+            (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn1): FrozenBatchNorm2d()
+            (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (bn2): FrozenBatchNorm2d()
+            (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (bn3): FrozenBatchNorm2d()
+            (relu): ReLU(inplace=True)
+          )
+        )
+      )
+    )
+    (1): PositionEmbeddingSine()
+  )
+)
+AdamW (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    eps: 1e-08
+    foreach: None
+    initial_lr: 0.0001
+    lr: 0.0001
+    maximize: False
+    weight_decay: 0.0001
+Parameter Group 1
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    eps: 1e-08
+    foreach: None
+    initial_lr: 1e-05
+    lr: 1e-05
+    maximize: False
+    weight_decay: 0.0001
+)
+['criterion', 'data_loader', 'device', 'epoch', 'header', 'max_norm', 'metric_logger', 'model', 'optimizer', 'print_freq']
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(33)train_one_epoch()
+-> samples = samples.to(device)
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(34)train_one_epoch()
+-> targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
+tensor([[[[ 1.0673,  1.1187,  1.2214,  ...,  0.6563,  0.6734,  0.6906],
+          [ 1.0673,  1.0673,  1.0844,  ...,  0.6563,  0.6563,  0.6563],
+          [ 1.0502,  0.9646,  0.8447,  ...,  0.6734,  0.6221,  0.6221],
+          ...,
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000],
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000],
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000]],
+         [[ 1.2556,  1.3081,  1.3957,  ...,  0.8354,  0.8529,  0.8704],
+          [ 1.2556,  1.2556,  1.2556,  ...,  0.8354,  0.8354,  0.8354],
+          [ 1.2381,  1.1506,  1.0105,  ...,  0.8529,  0.8004,  0.8004],
+          ...,
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000],
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000],
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000]],
+         [[ 1.4548,  1.5245,  1.6465,  ...,  0.9668,  1.0191,  1.0365],
+          [ 1.4548,  1.4722,  1.5071,  ...,  0.9668,  1.0017,  1.0017],
+          [ 1.4374,  1.3677,  1.2631,  ...,  0.9842,  0.9668,  0.9668],
+          ...,
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000],
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000],
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000]]],
+        [[[-1.9638, -1.9809, -1.9809,  ...,  0.0000,  0.0000,  0.0000],
+          [-1.9467, -1.9638, -1.9638,  ...,  0.0000,  0.0000,  0.0000],
+          [-1.9467, -1.9638, -1.9638,  ...,  0.0000,  0.0000,  0.0000],
+          ...,
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000],
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000],
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000]],
+         [[-1.8782, -1.8957, -1.8957,  ...,  0.0000,  0.0000,  0.0000],
+          [-1.8606, -1.8782, -1.8782,  ...,  0.0000,  0.0000,  0.0000],
+          [-1.8606, -1.8782, -1.8782,  ...,  0.0000,  0.0000,  0.0000],
+          ...,
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000],
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000],
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000]],
+         [[-1.6824, -1.6999, -1.6999,  ...,  0.0000,  0.0000,  0.0000],
+          [-1.6650, -1.6824, -1.6824,  ...,  0.0000,  0.0000,  0.0000],
+          [-1.6650, -1.6824, -1.6824,  ...,  0.0000,  0.0000,  0.0000],
+          ...,
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000],
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000],
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000]]],
+        [[[ 2.2147,  2.2147,  2.2147,  ...,  0.0000,  0.0000,  0.0000],
+          [ 2.2147,  2.2318,  2.2318,  ...,  0.0000,  0.0000,  0.0000],
+          [ 2.2147,  2.2318,  2.2318,  ...,  0.0000,  0.0000,  0.0000],
+          ...,
+          [-0.2513, -0.1999, -0.1314,  ...,  0.0000,  0.0000,  0.0000],
+          [-0.2342, -0.1999, -0.1657,  ...,  0.0000,  0.0000,  0.0000],
+          [-0.1999, -0.1999, -0.2171,  ...,  0.0000,  0.0000,  0.0000]],
+         [[ 2.4111,  2.4286,  2.4286,  ...,  0.0000,  0.0000,  0.0000],
+          [ 2.4111,  2.4286,  2.4286,  ...,  0.0000,  0.0000,  0.0000],
+          [ 2.4111,  2.4286,  2.4286,  ...,  0.0000,  0.0000,  0.0000],
+          ...,
+          [-0.1275, -0.0749,  0.0126,  ...,  0.0000,  0.0000,  0.0000],
+          [-0.1099, -0.0749, -0.0224,  ...,  0.0000,  0.0000,  0.0000],
+          [-0.0749, -0.0749, -0.0574,  ...,  0.0000,  0.0000,  0.0000]],
+         [[ 2.6400,  2.6400,  2.6400,  ...,  0.0000,  0.0000,  0.0000],
+          [ 2.6400,  2.6400,  2.6400,  ...,  0.0000,  0.0000,  0.0000],
+          [ 2.6400,  2.6400,  2.6400,  ...,  0.0000,  0.0000,  0.0000],
+          ...,
+          [ 0.0779,  0.1302,  0.2173,  ...,  0.0000,  0.0000,  0.0000],
+          [ 0.0953,  0.1302,  0.1825,  ...,  0.0000,  0.0000,  0.0000],
+          [ 0.1302,  0.1302,  0.1302,  ...,  0.0000,  0.0000,  0.0000]]],
+        [[[-1.6555, -1.6384, -1.6213,  ...,  0.0000,  0.0000,  0.0000],
+          [-1.6555, -1.6384, -1.6213,  ...,  0.0000,  0.0000,  0.0000],
+          [-1.6384, -1.6384, -1.6213,  ...,  0.0000,  0.0000,  0.0000],
+          ...,
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000],
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000],
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000]],
+         [[-1.5105, -1.4930, -1.4755,  ...,  0.0000,  0.0000,  0.0000],
+          [-1.5105, -1.4930, -1.4755,  ...,  0.0000,  0.0000,  0.0000],
+          [-1.4930, -1.4930, -1.4755,  ...,  0.0000,  0.0000,  0.0000],
+          ...,
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000],
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000],
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000]],
+         [[-1.1770, -1.1596, -1.1421,  ...,  0.0000,  0.0000,  0.0000],
+          [-1.1596, -1.1596, -1.1421,  ...,  0.0000,  0.0000,  0.0000],
+          [-1.1421, -1.1421, -1.1247,  ...,  0.0000,  0.0000,  0.0000],
+          ...,
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000],
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000],
+          [ 0.0000,  0.0000,  0.0000,  ...,  0.0000,  0.0000,  0.0000]]]],
+       device='cuda:0')
+*** AttributeError: 'NestedTensor' object has no attribute 'shape'
+torch.Size([4, 3, 894, 1151])
+*** AttributeError: 'tuple' object has no attribute 'shape'
+{'boxes': tensor([[0.6297, 0.4872, 0.0892, 0.2060],
+        [0.2185, 0.5265, 0.0933, 0.2280],
+        [0.2352, 0.6434, 0.0791, 0.0161],
+        [0.6438, 0.5845, 0.0692, 0.0224]]), 'labels': tensor([ 1,  1, 35, 36]), 'image_id': tensor([120655]), 'area': tensor([6859.5034, 8110.4087,  451.4604,  434.3461]), 'iscrowd': tensor([0, 0, 0, 0]), 'orig_size': tensor([427, 640]), 'size': tensor([ 768, 1151])}
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(36)train_one_epoch()
+-> outputs = model(samples)
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(37)train_one_epoch()
+-> loss_dict = criterion(outputs, targets)
+{'pred_logits': tensor([[[-0.5317, -0.3564, -0.0076,  ...,  0.0923, -1.2345, -0.1686],
+         [-0.5698,  0.3558,  0.5054,  ...,  0.2522, -1.1637,  0.0342],
+         [-0.2324,  0.5692,  0.1434,  ...,  0.5359, -1.4174, -0.4885],
+         ...,
+         [-0.1051,  0.5128,  0.1264,  ...,  0.2545, -1.5438, -0.2896],
+         [-0.3968, -0.2304, -0.1625,  ...,  0.3031, -1.1312, -0.5047],
+         [-0.5876, -0.0902,  0.1897,  ...,  0.1479, -1.4449, -0.1173]],
+        [[ 0.8224,  0.4412, -0.5501,  ...,  0.8062, -1.3788,  0.8557],
+         [ 0.1564,  0.6407, -0.5748,  ..., -0.0629, -0.8811,  0.6705],
+         [ 0.6512,  0.6757, -0.3668,  ...,  0.4080, -0.8926,  0.2149],
+         ...,
+         [ 0.5775,  0.7804, -0.3148,  ...,  0.2231, -1.0627,  0.7482],
+         [ 0.5685,  0.1746, -0.3583,  ...,  0.1640, -1.2381, -0.1125],
+         [ 0.3108,  0.6837, -0.3477,  ...,  0.6396, -0.7964,  0.3865]],
+        [[ 0.4521,  0.5584, -0.5349,  ..., -0.1404, -1.4431, -0.5868],
+         [ 0.0355,  0.1295, -0.5444,  ...,  0.4303, -1.1058, -0.0127],
+         [ 0.6000,  0.5961, -0.4592,  ...,  0.0220, -1.5294, -0.4785],
+         ...,
+         [ 0.0581,  0.1653, -0.1998,  ..., -0.0698, -1.0817, -0.4187],
+         [ 0.3045,  0.5324, -0.9112,  ..., -0.3061, -0.9433, -0.1837],
+         [ 0.2144,  0.2115, -0.6590,  ..., -0.0746, -0.9918,  0.0885]],
+        [[-0.1646,  0.0681, -0.2174,  ..., -0.2981, -1.2703,  0.3786],
+         [ 0.1884,  0.6030, -0.0575,  ..., -0.2902, -0.8518, -0.1747],
+         [ 0.1257,  0.3525, -0.6415,  ..., -0.1354, -1.2083,  0.1687],
+         ...,
+         [ 0.2266,  0.6715, -0.3774,  ...,  0.4224, -0.9471,  0.1133],
+         [-0.1233,  0.4912, -0.4771,  ...,  0.2010, -0.8361, -0.1850],
+         [-0.0382,  0.4622, -0.0689,  ...,  0.0396, -1.2020, -0.1348]]],
+       device='cuda:0', grad_fn=<SelectBackward0>), 'pred_boxes': tensor([[[0.5050, 0.5002, 0.4913, 0.5196],
+         [0.4933, 0.4984, 0.5032, 0.5113],
+         [0.5168, 0.5159, 0.4818, 0.5163],
+         ...,
+         [0.4748, 0.4935, 0.4908, 0.5083],
+         [0.4827, 0.4993, 0.5188, 0.5115],
+         [0.4923, 0.5006, 0.4998, 0.5067]],
+        [[0.5281, 0.5035, 0.5095, 0.4989],
+         [0.5102, 0.4950, 0.5099, 0.5025],
+         [0.5085, 0.4902, 0.4972, 0.5044],
+         ...,
+         [0.5107, 0.5066, 0.5116, 0.4960],
+         [0.5128, 0.4762, 0.5215, 0.4892],
+         [0.5089, 0.4837, 0.5105, 0.5149]],
+        [[0.5075, 0.5133, 0.5156, 0.5101],
+         [0.5091, 0.5125, 0.5139, 0.5039],
+         [0.5045, 0.5147, 0.5128, 0.5133],
+         ...,
+         [0.5021, 0.5225, 0.4983, 0.5114],
+         [0.4953, 0.5056, 0.5114, 0.4991],
+         [0.5107, 0.5064, 0.5216, 0.5086]],
+        [[0.4930, 0.5034, 0.5055, 0.4940],
+         [0.4868, 0.4922, 0.4970, 0.5008],
+         [0.4976, 0.4940, 0.5065, 0.4859],
+         ...,
+         [0.5010, 0.5006, 0.5027, 0.5057],
+         [0.4849, 0.4969, 0.5041, 0.4997],
+         [0.4845, 0.4999, 0.5054, 0.4921]]], device='cuda:0',
+       grad_fn=<SelectBackward0>), 'aux_outputs': [{'pred_logits': tensor([[[-0.2774, -0.9517, -0.5019,  ...,  0.6215,  0.0631, -0.1767],
+         [-0.0473, -0.7238, -0.8999,  ...,  0.7917, -0.4766,  0.0913],
+         [-0.3108, -0.3701, -0.4735,  ...,  0.8107, -0.5922,  0.2140],
+         ...,
+         [-0.0572, -0.5719, -0.3194,  ...,  0.4974, -0.1475,  0.2789],
+         [-0.3130, -0.6874, -0.3858,  ...,  0.6297,  0.0710,  0.2146],
+         [ 0.3654, -1.0085, -0.5194,  ...,  0.9995, -0.3178, -0.1916]],
+        [[ 0.8518, -0.7352, -0.2422,  ...,  0.1543, -0.1078,  0.5157],
+         [ 0.5427, -1.0431, -0.5488,  ..., -0.4853, -0.1763,  0.5751],
+         [ 1.0915, -0.8145, -0.7727,  ...,  0.2207, -0.4679,  0.2052],
+         ...,
+         [ 0.9910, -0.9704, -0.6012,  ...,  0.1637,  0.0353,  0.7969],
+         [ 0.9275, -0.9809, -0.4393,  ...,  0.3508,  0.0952,  0.4138],
+         [ 0.8563, -1.0847, -0.5389,  ..., -0.0543, -0.3936,  0.8060]],
+        [[ 0.6257, -0.4391, -0.5832,  ...,  0.2965, -1.0327,  0.2427],
+         [ 0.8292, -0.3346, -0.4973,  ...,  0.0830, -0.4086,  0.6645],
+         [ 0.7174, -0.3094, -0.3607,  ...,  0.6080, -0.4680,  0.2147],
+         ...,
+         [ 0.5546, -0.4612, -0.2123,  ...,  0.1165, -0.5689,  0.2298],
+         [ 1.0336, -0.4983, -0.4148,  ...,  0.3524, -0.4402,  0.1959],
+         [ 0.7861, -0.7846, -0.2263,  ...,  0.2866, -0.5142,  0.4827]],
+        [[ 0.1773, -0.1775, -0.0537,  ...,  0.3413, -0.5192, -0.4274],
+         [-0.2706,  0.0146, -0.2065,  ...,  0.4715,  0.0257,  0.0739],
+         [-0.2779, -0.2624,  0.2569,  ...,  0.2346, -0.3880, -0.0518],
+         ...,
+         [-0.2986,  0.3287,  0.0238,  ...,  0.3156, -0.3282, -0.3728],
+         [-0.0785,  0.0380, -0.2160,  ...,  0.4941, -0.5452, -0.5021],
+         [ 0.1446,  0.1165, -0.2420,  ...,  0.4160, -0.4144, -0.2366]]],
+       device='cuda:0', grad_fn=<UnbindBackward0>), 'pred_boxes': tensor([[[0.5658, 0.5176, 0.4946, 0.4685],
+         [0.5625, 0.5287, 0.4997, 0.4726],
+         [0.5600, 0.5123, 0.4796, 0.4629],
+         ...,
+         [0.5527, 0.5204, 0.4865, 0.4627],
+         [0.5562, 0.5291, 0.4943, 0.4700],
+         [0.5704, 0.4966, 0.4937, 0.4730]],
+        [[0.5440, 0.5275, 0.4814, 0.5050],
+         [0.5222, 0.5216, 0.4687, 0.4891],
+         [0.5388, 0.5223, 0.4781, 0.4967],
+         ...,
+         [0.5397, 0.5205, 0.4798, 0.4895],
+         [0.5252, 0.5190, 0.4967, 0.5123],
+         [0.5324, 0.5205, 0.4849, 0.4955]],
+        [[0.5254, 0.5162, 0.4943, 0.4747],
+         [0.5519, 0.5230, 0.4919, 0.4965],
+         [0.5440, 0.5119, 0.4957, 0.4823],
+         ...,
+         [0.5468, 0.5212, 0.5001, 0.4836],
+         [0.5467, 0.5133, 0.4935, 0.4887],
+         [0.5436, 0.5088, 0.5000, 0.4892]],
+        [[0.5601, 0.5418, 0.4989, 0.4708],
+         [0.5388, 0.5414, 0.4815, 0.4735],
+         [0.5705, 0.5255, 0.4947, 0.4734],
+         ...,
+         [0.5587, 0.5207, 0.5006, 0.4615],
+         [0.5649, 0.5162, 0.4807, 0.4839],
+         [0.5529, 0.5113, 0.4938, 0.4628]]], device='cuda:0',
+       grad_fn=<UnbindBackward0>)}, {'pred_logits': tensor([[[ 0.2355, -1.3279,  0.1332,  ...,  0.7215,  0.2486,  0.3580],
+         [ 0.3821, -1.5918, -0.0348,  ...,  0.9101, -0.2387,  0.1812],
+         [ 0.6775, -0.7385,  0.3280,  ...,  0.9781, -0.4449,  0.0509],
+         ...,
+         [ 0.5531, -1.2734,  0.5627,  ...,  0.5784, -0.5602,  0.3866],
+         [ 0.3203, -1.3706,  0.6939,  ...,  0.5908, -0.0967,  0.4593],
+         [ 0.5163, -1.4056,  0.3053,  ...,  0.8504, -0.5356, -0.0119]],
+        [[ 0.7589, -0.9899,  0.4220,  ...,  0.0195, -0.3183,  0.2995],
+         [ 0.6967, -1.0337, -0.3168,  ..., -0.0911,  0.0185,  0.0546],
+         [ 0.8611, -0.7249, -0.0684,  ..., -0.0203, -0.2641,  0.0362],
+         ...,
+         [ 0.5626, -1.3000, -0.3764,  ..., -0.1975,  0.0716,  0.2346],
+         [ 0.7334, -0.7492, -0.0323,  ..., -0.0453,  0.2663,  0.3063],
+         [ 0.6400, -0.9985, -0.0705,  ..., -0.0654, -0.1740,  0.2838]],
+        [[ 0.4156, -0.5259, -0.2701,  ...,  0.1591, -0.5081,  0.9030],
+         [ 0.7337, -0.4388, -0.0039,  ..., -0.0033,  0.3465,  1.0863],
+         [ 0.7546, -0.4832, -0.1727,  ...,  0.4997, -0.1510,  0.3606],
+         ...,
+         [ 0.4906, -0.8103, -0.1787,  ...,  0.3489,  0.0091,  0.4168],
+         [ 0.8661, -0.9126, -0.0419,  ...,  0.4592, -0.1132,  0.4881],
+         [ 0.5738, -0.7779, -0.3094,  ...,  0.2708, -0.3993,  1.0479]],
+        [[ 0.1038, -0.7237,  0.3018,  ...,  0.4996, -0.7105,  0.0890],
+         [ 0.2536, -0.1910,  0.3293,  ...,  0.7881, -0.0955, -0.0171],
+         [-0.0907, -0.9127,  0.6911,  ...,  0.3168, -0.7431,  0.0376],
+         ...,
+         [ 0.1343, -0.5410,  0.3156,  ...,  0.6064, -0.5944, -0.0769],
+         [ 0.0988, -0.7726,  0.3627,  ...,  0.9927, -0.7641, -0.3169],
+         [ 0.3503, -0.6308,  0.1536,  ...,  0.4520, -0.8762, -0.2102]]],
+       device='cuda:0', grad_fn=<UnbindBackward0>), 'pred_boxes': tensor([[[0.5395, 0.5113, 0.5065, 0.4932],
+         [0.5561, 0.5062, 0.5027, 0.4888],
+         [0.5510, 0.5155, 0.4964, 0.4769],
+         ...,
+         [0.5200, 0.5262, 0.5099, 0.4867],
+         [0.5466, 0.5070, 0.5164, 0.4855],
+         [0.5412, 0.4885, 0.5055, 0.4789]],
+        [[0.5174, 0.5084, 0.4924, 0.4848],
+         [0.5263, 0.5002, 0.4817, 0.5035],
+         [0.5273, 0.5120, 0.4906, 0.5121],
+         ...,
+         [0.5246, 0.4902, 0.4931, 0.5090],
+         [0.5154, 0.4852, 0.5056, 0.5076],
+         [0.5303, 0.5115, 0.4751, 0.5124]],
+        [[0.5207, 0.5055, 0.4972, 0.4881],
+         [0.5308, 0.5223, 0.5026, 0.4955],
+         [0.5181, 0.5176, 0.5023, 0.4894],
+         ...,
+         [0.5247, 0.5105, 0.5057, 0.4958],
+         [0.5280, 0.5028, 0.5033, 0.4939],
+         [0.5232, 0.5082, 0.5072, 0.4977]],
+        [[0.5261, 0.5261, 0.4999, 0.4918],
+         [0.5364, 0.5237, 0.4944, 0.4932],
+         [0.5252, 0.5245, 0.5088, 0.4852],
+         ...,
+         [0.5308, 0.5235, 0.5043, 0.4936],
+         [0.5183, 0.5124, 0.4938, 0.4911],
+         [0.5253, 0.5210, 0.4934, 0.4813]]], device='cuda:0',
+       grad_fn=<UnbindBackward0>)}, {'pred_logits': tensor([[[ 0.6317, -1.0386, -0.1234,  ...,  0.9100, -0.0977, -0.5319],
+         [ 0.6513, -0.8828,  0.1128,  ...,  1.0916, -0.4168, -0.9085],
+         [ 0.7854, -0.3020,  0.2639,  ...,  0.9070, -0.2641, -0.5806],
+         ...,
+         [ 0.6283, -0.8806,  0.4659,  ...,  1.0163, -0.6948, -0.3837],
+         [ 0.2069, -0.9900,  0.3654,  ...,  0.7284, -0.3517, -0.7491],
+         [ 0.7920, -0.6315,  0.3235,  ...,  1.2865, -0.3757, -0.6750]],
+        [[ 0.3991, -0.1680,  1.1167,  ...,  0.1405, -0.7314,  0.5790],
+         [ 0.2088, -0.2903,  0.4097,  ...,  0.0122, -0.5102, -0.2543],
+         [ 0.2738,  0.1157,  0.8101,  ...,  0.1673, -0.1735,  0.2611],
+         ...,
+         [ 0.3069, -0.0545,  0.7008,  ..., -0.2808, -0.4435,  0.1624],
+         [ 0.2369,  0.1059,  1.0237,  ...,  0.2389, -0.2370,  0.0684],
+         [-0.2706, -0.1487,  0.6595,  ..., -0.1587, -0.4347,  0.5924]],
+        [[ 0.1047,  0.3670,  0.1648,  ...,  0.4344,  0.1241, -0.2502],
+         [ 0.3173,  0.2400,  0.5814,  ...,  0.0704,  0.0371,  0.2612],
+         [ 0.4827,  0.5088,  0.2151,  ...,  0.6003, -0.1014, -0.3126],
+         ...,
+         [ 0.1016,  0.0326,  0.1656,  ...,  0.2201, -0.0040, -0.2913],
+         [ 0.5862,  0.2911,  0.3474,  ...,  0.5967, -0.2989,  0.0032],
+         [ 0.3599,  0.4730,  0.2406,  ...,  0.1578, -0.0148, -0.1280]],
+        [[ 0.0697, -0.7796,  0.7656,  ...,  0.2696, -0.7043,  0.3595],
+         [ 0.4708, -0.2735,  0.7149,  ...,  0.5874, -0.5003,  0.1000],
+         [-0.0753, -0.4785,  1.2400,  ...,  0.1920, -0.6215,  0.1725],
+         ...,
+         [ 0.3608, -0.5819,  0.4987,  ...,  0.4048, -0.7962,  0.1322],
+         [ 0.1739, -0.6685,  0.8401,  ...,  0.9276, -0.6027, -0.2641],
+         [ 0.3855, -0.4201,  0.4977,  ...,  0.3679, -0.7974,  0.2848]]],
+       device='cuda:0', grad_fn=<UnbindBackward0>), 'pred_boxes': tensor([[[0.5543, 0.5090, 0.4992, 0.5012],
+         [0.5562, 0.5099, 0.5132, 0.4914],
+         [0.5432, 0.5225, 0.5144, 0.4848],
+         ...,
+         [0.5344, 0.5070, 0.5171, 0.4846],
+         [0.5321, 0.5099, 0.5162, 0.4868],
+         [0.5390, 0.5083, 0.5073, 0.4887]],
+        [[0.4983, 0.5042, 0.5151, 0.4875],
+         [0.5097, 0.5001, 0.4970, 0.5026],
+         [0.5069, 0.4957, 0.5147, 0.4984],
+         ...,
+         [0.4964, 0.4839, 0.4912, 0.4746],
+         [0.4982, 0.5009, 0.5141, 0.4977],
+         [0.5027, 0.4959, 0.5085, 0.5088]],
+        [[0.5216, 0.5267, 0.4975, 0.4903],
+         [0.5243, 0.5274, 0.5166, 0.4938],
+         [0.5127, 0.5181, 0.5180, 0.4924],
+         ...,
+         [0.5185, 0.5200, 0.5277, 0.4957],
+         [0.5252, 0.5030, 0.5174, 0.4842],
+         [0.5227, 0.5267, 0.5139, 0.5047]],
+        [[0.5188, 0.5345, 0.4996, 0.4862],
+         [0.5153, 0.5276, 0.5119, 0.4826],
+         [0.5217, 0.5233, 0.5104, 0.4725],
+         ...,
+         [0.5110, 0.5223, 0.5075, 0.4769],
+         [0.5213, 0.5213, 0.5013, 0.4846],
+         [0.5237, 0.5089, 0.4986, 0.4792]]], device='cuda:0',
+       grad_fn=<UnbindBackward0>)}, {'pred_logits': tensor([[[ 0.2135, -1.0332,  0.4805,  ..., -0.4115, -0.0683, -0.7925],
+         [ 0.1920, -0.3577,  0.5906,  ..., -0.1032, -0.0068, -0.5697],
+         [ 0.0500, -0.0951,  0.9338,  ..., -0.3051,  0.2751, -0.8390],
+         ...,
+         [ 0.2851, -0.2289,  0.5098,  ...,  0.0343, -0.1921, -0.6224],
+         [-0.2429, -0.6671,  0.5587,  ..., -0.1821,  0.4631, -0.8013],
+         [ 0.0075, -0.4818,  0.9087,  ..., -0.3273, -0.2861, -0.7793]],
+        [[ 0.4748, -0.0848,  0.6504,  ..., -0.0320, -0.5831, -0.1942],
+         [ 0.0824, -0.2599, -0.0712,  ..., -0.2659, -0.7899, -0.4437],
+         [ 0.1817,  0.2076,  0.3552,  ..., -0.0172, -0.0112, -0.3242],
+         ...,
+         [ 0.2361,  0.2630,  0.4209,  ..., -0.4454, -0.3512,  0.0235],
+         [ 0.0134,  0.1574,  0.5904,  ..., -0.1600, -0.3064, -0.3034],
+         [-0.3973, -0.0348,  0.2868,  ..., -0.1034,  0.0845, -0.2288]],
+        [[ 0.1367,  0.0152,  0.4481,  ..., -0.5834, -0.2345, -0.4267],
+         [ 0.2025, -0.1461,  0.4610,  ..., -0.6402,  0.0386,  0.2276],
+         [ 0.4823, -0.0813,  0.7619,  ..., -0.4189, -0.2472, -0.6438],
+         ...,
+         [-0.1406, -0.3047,  0.6193,  ..., -0.8592, -0.3062, -0.6681],
+         [ 0.3989,  0.0916,  0.6901,  ..., -0.3686, -0.3030, -0.3212],
+         [ 0.2900,  0.0725,  0.6967,  ..., -0.6315,  0.2774, -0.4335]],
+        [[-0.6935, -0.7759,  0.8483,  ..., -0.5627, -0.2261,  0.3188],
+         [-0.5015, -0.3851,  0.4778,  ..., -0.6844, -0.2628,  0.2156],
+         [-0.4182, -0.4154,  0.8752,  ..., -0.4628, -0.3716, -0.1427],
+         ...,
+         [-0.1679, -0.5196,  0.2703,  ..., -0.7483, -0.3044,  0.0882],
+         [-0.4302, -0.4064,  0.7238,  ..., -0.1137, -0.1972, -0.9651],
+         [-0.1931, -0.4763,  0.2984,  ..., -0.7076, -0.3490, -0.0602]]],
+       device='cuda:0', grad_fn=<UnbindBackward0>), 'pred_boxes': tensor([[[0.5058, 0.4958, 0.5062, 0.4994],
+         [0.5045, 0.4978, 0.5148, 0.4894],
+         [0.4873, 0.5079, 0.5249, 0.4848],
+         ...,
+         [0.4860, 0.5115, 0.5171, 0.5013],
+         [0.4754, 0.4942, 0.5301, 0.4896],
+         [0.5002, 0.4990, 0.5147, 0.4978]],
+        [[0.5237, 0.4972, 0.5198, 0.4708],
+         [0.5207, 0.5026, 0.5087, 0.4887],
+         [0.5091, 0.4942, 0.5109, 0.4905],
+         ...,
+         [0.4905, 0.4876, 0.4950, 0.4816],
+         [0.5032, 0.4969, 0.5060, 0.4854],
+         [0.5019, 0.4948, 0.5213, 0.4864]],
+        [[0.4994, 0.4947, 0.4986, 0.4909],
+         [0.4976, 0.5006, 0.5190, 0.4823],
+         [0.5052, 0.4979, 0.5143, 0.4864],
+         ...,
+         [0.4915, 0.4850, 0.5241, 0.4869],
+         [0.4972, 0.4882, 0.5133, 0.4868],
+         [0.5010, 0.5079, 0.5144, 0.5017]],
+        [[0.4958, 0.5213, 0.4900, 0.4991],
+         [0.4848, 0.5133, 0.5062, 0.4902],
+         [0.4932, 0.5154, 0.5090, 0.4701],
+         ...,
+         [0.4896, 0.5132, 0.5004, 0.4883],
+         [0.4830, 0.5215, 0.4940, 0.5012],
+         [0.4800, 0.5150, 0.5117, 0.4843]]], device='cuda:0',
+       grad_fn=<UnbindBackward0>)}, {'pred_logits': tensor([[[-0.0692, -0.7424,  1.2106,  ..., -0.0155, -0.6849, -0.6499],
+         [-0.0631,  0.2411,  1.3853,  ...,  0.3067, -0.8052, -0.3689],
+         [-0.0432,  0.4195,  1.3303,  ...,  0.6174, -0.5752, -0.5732],
+         ...,
+         [ 0.0309,  0.1389,  1.1702,  ...,  0.3430, -1.1668, -0.6239],
+         [-0.3524, -0.3712,  1.0516,  ..., -0.2655, -0.2175, -0.7122],
+         [-0.3450, -0.1587,  1.3055,  ..., -0.0307, -0.6445, -0.7483]],
+        [[ 0.2839,  0.2878,  0.4951,  ...,  0.3586, -1.3730,  0.0245],
+         [ 0.1736,  0.2957,  0.2773,  ..., -0.3447, -0.9745, -0.4836],
+         [ 0.5286,  0.3396,  0.6857,  ..., -0.0505, -0.7574, -0.4014],
+         ...,
+         [ 0.3655,  0.1073,  0.6888,  ..., -0.2208, -1.1531, -0.2290],
+         [ 0.3026,  0.2039,  0.6311,  ..., -0.1566, -1.0995, -0.5134],
+         [ 0.0617,  0.2748,  0.2805,  ...,  0.1725, -0.7963, -0.5281]],
+        [[ 0.2728,  0.5218,  0.0953,  ...,  0.2405, -1.1664, -0.6197],
+         [ 0.1940, -0.0369,  0.0077,  ...,  0.2068, -1.0692, -0.4849],
+         [ 0.3197,  0.3252,  0.1146,  ...,  0.4729, -0.9434, -0.6731],
+         ...,
+         [-0.2689,  0.2945,  0.3530,  ...,  0.2373, -0.6956, -0.9044],
+         [ 0.2312,  0.4247,  0.2640,  ...,  0.4728, -0.7415, -0.7298],
+         [ 0.4386,  0.3010, -0.0214,  ...,  0.2517, -0.6710, -0.0508]],
+        [[-0.6723, -0.4131,  0.7449,  ...,  0.1283, -1.0573, -0.0327],
+         [-0.1733, -0.1168,  0.5791,  ..., -0.0981, -0.7698,  0.0630],
+         [-0.5701, -0.5139,  0.6056,  ...,  0.1607, -1.0619, -0.3547],
+         ...,
+         [-0.2770,  0.0529,  0.4058,  ...,  0.3941, -0.8244, -0.0691],
+         [-0.5657, -0.0283,  0.7556,  ...,  0.5320, -0.6277, -0.9963],
+         [-0.2768, -0.0361,  0.5381,  ...,  0.2074, -1.0525, -0.1691]]],
+       device='cuda:0', grad_fn=<UnbindBackward0>), 'pred_boxes': tensor([[[0.4852, 0.4750, 0.5216, 0.5114],
+         [0.4868, 0.4891, 0.5313, 0.4985],
+         [0.4919, 0.4995, 0.5203, 0.4851],
+         ...,
+         [0.4793, 0.4813, 0.5257, 0.4884],
+         [0.4812, 0.4819, 0.5576, 0.4879],
+         [0.4816, 0.4707, 0.5351, 0.4985]],
+        [[0.5149, 0.5050, 0.5187, 0.4809],
+         [0.5037, 0.5017, 0.5190, 0.5067],
+         [0.4928, 0.5057, 0.5122, 0.5096],
+         ...,
+         [0.4916, 0.4961, 0.5026, 0.5076],
+         [0.5045, 0.4801, 0.5216, 0.4986],
+         [0.4938, 0.4919, 0.5234, 0.4944]],
+        [[0.4975, 0.5035, 0.4936, 0.4764],
+         [0.4977, 0.5131, 0.5164, 0.4909],
+         [0.4934, 0.5093, 0.5150, 0.5070],
+         ...,
+         [0.4784, 0.5027, 0.4941, 0.4952],
+         [0.4901, 0.5075, 0.4958, 0.4894],
+         [0.4874, 0.4914, 0.5134, 0.4886]],
+        [[0.4771, 0.5095, 0.5038, 0.4949],
+         [0.4745, 0.4896, 0.5132, 0.4923],
+         [0.4926, 0.5018, 0.5273, 0.4780],
+         ...,
+         [0.4789, 0.5084, 0.5145, 0.4958],
+         [0.4729, 0.4884, 0.5211, 0.4896],
+         [0.4701, 0.4970, 0.5090, 0.4783]]], device='cuda:0',
+       grad_fn=<UnbindBackward0>)}]}
+dict_keys(['pred_logits', 'pred_boxes', 'aux_outputs'])
+tensor([[[-0.5317, -0.3564, -0.0076,  ...,  0.0923, -1.2345, -0.1686],
+         [-0.5698,  0.3558,  0.5054,  ...,  0.2522, -1.1637,  0.0342],
+         [-0.2324,  0.5692,  0.1434,  ...,  0.5359, -1.4174, -0.4885],
+         ...,
+         [-0.1051,  0.5128,  0.1264,  ...,  0.2545, -1.5438, -0.2896],
+         [-0.3968, -0.2304, -0.1625,  ...,  0.3031, -1.1312, -0.5047],
+         [-0.5876, -0.0902,  0.1897,  ...,  0.1479, -1.4449, -0.1173]],
+        [[ 0.8224,  0.4412, -0.5501,  ...,  0.8062, -1.3788,  0.8557],
+         [ 0.1564,  0.6407, -0.5748,  ..., -0.0629, -0.8811,  0.6705],
+         [ 0.6512,  0.6757, -0.3668,  ...,  0.4080, -0.8926,  0.2149],
+         ...,
+         [ 0.5775,  0.7804, -0.3148,  ...,  0.2231, -1.0627,  0.7482],
+         [ 0.5685,  0.1746, -0.3583,  ...,  0.1640, -1.2381, -0.1125],
+         [ 0.3108,  0.6837, -0.3477,  ...,  0.6396, -0.7964,  0.3865]],
+        [[ 0.4521,  0.5584, -0.5349,  ..., -0.1404, -1.4431, -0.5868],
+         [ 0.0355,  0.1295, -0.5444,  ...,  0.4303, -1.1058, -0.0127],
+         [ 0.6000,  0.5961, -0.4592,  ...,  0.0220, -1.5294, -0.4785],
+         ...,
+         [ 0.0581,  0.1653, -0.1998,  ..., -0.0698, -1.0817, -0.4187],
+         [ 0.3045,  0.5324, -0.9112,  ..., -0.3061, -0.9433, -0.1837],
+         [ 0.2144,  0.2115, -0.6590,  ..., -0.0746, -0.9918,  0.0885]],
+        [[-0.1646,  0.0681, -0.2174,  ..., -0.2981, -1.2703,  0.3786],
+         [ 0.1884,  0.6030, -0.0575,  ..., -0.2902, -0.8518, -0.1747],
+         [ 0.1257,  0.3525, -0.6415,  ..., -0.1354, -1.2083,  0.1687],
+         ...,
+         [ 0.2266,  0.6715, -0.3774,  ...,  0.4224, -0.9471,  0.1133],
+         [-0.1233,  0.4912, -0.4771,  ...,  0.2010, -0.8361, -0.1850],
+         [-0.0382,  0.4622, -0.0689,  ...,  0.0396, -1.2020, -0.1348]]],
+       device='cuda:0', grad_fn=<SelectBackward0>)
+tensor([[[-0.5317, -0.3564, -0.0076,  ...,  0.0923, -1.2345, -0.1686],
+         [-0.5698,  0.3558,  0.5054,  ...,  0.2522, -1.1637,  0.0342],
+         [-0.2324,  0.5692,  0.1434,  ...,  0.5359, -1.4174, -0.4885],
+         ...,
+         [-0.1051,  0.5128,  0.1264,  ...,  0.2545, -1.5438, -0.2896],
+         [-0.3968, -0.2304, -0.1625,  ...,  0.3031, -1.1312, -0.5047],
+         [-0.5876, -0.0902,  0.1897,  ...,  0.1479, -1.4449, -0.1173]],
+        [[ 0.8224,  0.4412, -0.5501,  ...,  0.8062, -1.3788,  0.8557],
+         [ 0.1564,  0.6407, -0.5748,  ..., -0.0629, -0.8811,  0.6705],
+         [ 0.6512,  0.6757, -0.3668,  ...,  0.4080, -0.8926,  0.2149],
+         ...,
+         [ 0.5775,  0.7804, -0.3148,  ...,  0.2231, -1.0627,  0.7482],
+         [ 0.5685,  0.1746, -0.3583,  ...,  0.1640, -1.2381, -0.1125],
+         [ 0.3108,  0.6837, -0.3477,  ...,  0.6396, -0.7964,  0.3865]],
+        [[ 0.4521,  0.5584, -0.5349,  ..., -0.1404, -1.4431, -0.5868],
+         [ 0.0355,  0.1295, -0.5444,  ...,  0.4303, -1.1058, -0.0127],
+         [ 0.6000,  0.5961, -0.4592,  ...,  0.0220, -1.5294, -0.4785],
+         ...,
+         [ 0.0581,  0.1653, -0.1998,  ..., -0.0698, -1.0817, -0.4187],
+         [ 0.3045,  0.5324, -0.9112,  ..., -0.3061, -0.9433, -0.1837],
+         [ 0.2144,  0.2115, -0.6590,  ..., -0.0746, -0.9918,  0.0885]],
+        [[-0.1646,  0.0681, -0.2174,  ..., -0.2981, -1.2703,  0.3786],
+         [ 0.1884,  0.6030, -0.0575,  ..., -0.2902, -0.8518, -0.1747],
+         [ 0.1257,  0.3525, -0.6415,  ..., -0.1354, -1.2083,  0.1687],
+         ...,
+         [ 0.2266,  0.6715, -0.3774,  ...,  0.4224, -0.9471,  0.1133],
+         [-0.1233,  0.4912, -0.4771,  ...,  0.2010, -0.8361, -0.1850],
+         [-0.0382,  0.4622, -0.0689,  ...,  0.0396, -1.2020, -0.1348]]],
+       device='cuda:0', grad_fn=<SelectBackward0>)
+4
+*** SyntaxError: invalid syntax
+tensor([[-0.5317, -0.3564, -0.0076,  ...,  0.0923, -1.2345, -0.1686],
+        [-0.5698,  0.3558,  0.5054,  ...,  0.2522, -1.1637,  0.0342],
+        [-0.2324,  0.5692,  0.1434,  ...,  0.5359, -1.4174, -0.4885],
+        ...,
+        [-0.1051,  0.5128,  0.1264,  ...,  0.2545, -1.5438, -0.2896],
+        [-0.3968, -0.2304, -0.1625,  ...,  0.3031, -1.1312, -0.5047],
+        [-0.5876, -0.0902,  0.1897,  ...,  0.1479, -1.4449, -0.1173]],
+       device='cuda:0', grad_fn=<SelectBackward0>)
+torch.Size([100, 92])
+dict_keys(['pred_logits', 'pred_boxes', 'aux_outputs'])
+tensor([[0.5050, 0.5002, 0.4913, 0.5196],
+        [0.4933, 0.4984, 0.5032, 0.5113],
+        [0.5168, 0.5159, 0.4818, 0.5163],
+        [0.5041, 0.5005, 0.5089, 0.5131],
+        [0.4929, 0.5059, 0.4954, 0.5129],
+        [0.5014, 0.4859, 0.4860, 0.5142],
+        [0.4783, 0.4877, 0.4781, 0.5070],
+        [0.4886, 0.5170, 0.5048, 0.5176],
+        [0.4851, 0.5045, 0.5010, 0.5242],
+        [0.4932, 0.5085, 0.4994, 0.5134],
+        [0.4842, 0.4964, 0.4877, 0.5298],
+        [0.5001, 0.4932, 0.4978, 0.5074],
+        [0.4866, 0.5076, 0.4971, 0.5179],
+        [0.4897, 0.4997, 0.4931, 0.5128],
+        [0.4862, 0.5055, 0.4958, 0.5180],
+        [0.4762, 0.5032, 0.5014, 0.5096],
+        [0.5023, 0.5148, 0.4957, 0.5041],
+        [0.4948, 0.5019, 0.4874, 0.5048],
+        [0.4843, 0.4893, 0.4944, 0.5092],
+        [0.4914, 0.5004, 0.5011, 0.5116],
+        [0.4832, 0.5028, 0.4877, 0.5083],
+        [0.5008, 0.5007, 0.5006, 0.5202],
+        [0.4726, 0.4995, 0.5127, 0.5024],
+        [0.4826, 0.5021, 0.5075, 0.5050],
+        [0.5010, 0.5022, 0.4823, 0.5080],
+        [0.4926, 0.5048, 0.4940, 0.5030],
+        [0.4807, 0.5129, 0.5047, 0.4991],
+        [0.4878, 0.5058, 0.5034, 0.5002],
+        [0.4863, 0.5109, 0.4970, 0.5052],
+        [0.4968, 0.5043, 0.4932, 0.5223],
+        [0.4945, 0.4843, 0.5088, 0.5146],
+        [0.4923, 0.5043, 0.4922, 0.5050],
+        [0.4836, 0.5051, 0.4983, 0.5241],
+        [0.4927, 0.5075, 0.4724, 0.5154],
+        [0.5027, 0.5027, 0.5041, 0.5114],
+        [0.4959, 0.5030, 0.4984, 0.5042],
+        [0.4925, 0.5076, 0.5062, 0.5044],
+        [0.4918, 0.5136, 0.4998, 0.5046],
+        [0.4969, 0.4985, 0.4950, 0.5216],
+        [0.4839, 0.4925, 0.4909, 0.5180],
+        [0.4917, 0.5053, 0.4961, 0.5087],
+        [0.4950, 0.4997, 0.4972, 0.5198],
+        [0.4947, 0.5124, 0.4926, 0.5172],
+        [0.4838, 0.5038, 0.5016, 0.5090],
+        [0.4748, 0.5012, 0.5001, 0.5146],
+        [0.4888, 0.5016, 0.5050, 0.5154],
+        [0.4804, 0.5201, 0.4690, 0.5278],
+        [0.5131, 0.5066, 0.4952, 0.5223],
+        [0.4783, 0.5174, 0.4997, 0.5127],
+        [0.4890, 0.5034, 0.5061, 0.5167],
+        [0.4817, 0.5032, 0.5029, 0.5130],
+        [0.4849, 0.5119, 0.4977, 0.5089],
+        [0.4979, 0.5152, 0.4956, 0.5086],
+        [0.4997, 0.5087, 0.4992, 0.5196],
+        [0.4999, 0.5056, 0.4876, 0.5067],
+        [0.4923, 0.4890, 0.4971, 0.5080],
+        [0.4965, 0.4990, 0.4872, 0.5175],
+        [0.4908, 0.5101, 0.4769, 0.5208],
+        [0.4881, 0.5073, 0.5023, 0.5219],
+        [0.4925, 0.5055, 0.4969, 0.5030],
+        [0.5189, 0.5050, 0.4922, 0.5098],
+        [0.4970, 0.5111, 0.5026, 0.5014],
+        [0.4826, 0.4966, 0.5044, 0.5136],
+        [0.4744, 0.4924, 0.5144, 0.5089],
+        [0.4767, 0.5111, 0.4950, 0.5143],
+        [0.4837, 0.5038, 0.4955, 0.5109],
+        [0.4848, 0.5056, 0.5042, 0.5182],
+        [0.4739, 0.5025, 0.4997, 0.5107],
+        [0.4864, 0.5048, 0.4894, 0.5215],
+        [0.4822, 0.5068, 0.5076, 0.5146],
+        [0.4936, 0.5060, 0.5043, 0.5026],
+        [0.4766, 0.5069, 0.4999, 0.5186],
+        [0.4866, 0.5017, 0.4928, 0.5184],
+        [0.4849, 0.5081, 0.5164, 0.5217],
+        [0.4851, 0.5188, 0.5040, 0.5203],
+        [0.4743, 0.5094, 0.5073, 0.4979],
+        [0.4887, 0.5063, 0.5108, 0.5143],
+        [0.4985, 0.5120, 0.5087, 0.5138],
+        [0.4822, 0.5108, 0.4963, 0.5187],
+        [0.4895, 0.4987, 0.5019, 0.5059],
+        [0.4926, 0.5005, 0.5000, 0.5000],
+        [0.4923, 0.4931, 0.4830, 0.5190],
+        [0.5067, 0.5041, 0.4807, 0.5203],
+        [0.4745, 0.5034, 0.5117, 0.5171],
+        [0.4911, 0.4986, 0.4985, 0.4969],
+        [0.4860, 0.4947, 0.5050, 0.5001],
+        [0.4905, 0.4974, 0.4807, 0.5263],
+        [0.4945, 0.5054, 0.4960, 0.5148],
+        [0.4864, 0.4987, 0.4859, 0.5270],
+        [0.4882, 0.4973, 0.4908, 0.5137],
+        [0.4921, 0.5084, 0.5016, 0.5264],
+        [0.4874, 0.5037, 0.4918, 0.5053],
+        [0.4833, 0.5084, 0.5003, 0.4956],
+        [0.4952, 0.4937, 0.4832, 0.5076],
+        [0.5082, 0.4992, 0.4853, 0.5123],
+        [0.4952, 0.5000, 0.4866, 0.5069],
+        [0.4965, 0.4997, 0.5021, 0.5175],
+        [0.4748, 0.4935, 0.4908, 0.5083],
+        [0.4827, 0.4993, 0.5188, 0.5115],
+        [0.4923, 0.5006, 0.4998, 0.5067]], device='cuda:0',
+       grad_fn=<SelectBackward0>)
+torch.Size([100, 4])
+dict_keys(['pred_logits', 'pred_boxes', 'aux_outputs'])
+tensor([[[-0.5317, -0.3564, -0.0076,  ...,  0.0923, -1.2345, -0.1686],
+         [-0.5698,  0.3558,  0.5054,  ...,  0.2522, -1.1637,  0.0342],
+         [-0.2324,  0.5692,  0.1434,  ...,  0.5359, -1.4174, -0.4885],
+         ...,
+         [-0.1051,  0.5128,  0.1264,  ...,  0.2545, -1.5438, -0.2896],
+         [-0.3968, -0.2304, -0.1625,  ...,  0.3031, -1.1312, -0.5047],
+         [-0.5876, -0.0902,  0.1897,  ...,  0.1479, -1.4449, -0.1173]],
+        [[ 0.8224,  0.4412, -0.5501,  ...,  0.8062, -1.3788,  0.8557],
+         [ 0.1564,  0.6407, -0.5748,  ..., -0.0629, -0.8811,  0.6705],
+         [ 0.6512,  0.6757, -0.3668,  ...,  0.4080, -0.8926,  0.2149],
+         ...,
+         [ 0.5775,  0.7804, -0.3148,  ...,  0.2231, -1.0627,  0.7482],
+         [ 0.5685,  0.1746, -0.3583,  ...,  0.1640, -1.2381, -0.1125],
+         [ 0.3108,  0.6837, -0.3477,  ...,  0.6396, -0.7964,  0.3865]],
+        [[ 0.4521,  0.5584, -0.5349,  ..., -0.1404, -1.4431, -0.5868],
+         [ 0.0355,  0.1295, -0.5444,  ...,  0.4303, -1.1058, -0.0127],
+         [ 0.6000,  0.5961, -0.4592,  ...,  0.0220, -1.5294, -0.4785],
+         ...,
+         [ 0.0581,  0.1653, -0.1998,  ..., -0.0698, -1.0817, -0.4187],
+         [ 0.3045,  0.5324, -0.9112,  ..., -0.3061, -0.9433, -0.1837],
+         [ 0.2144,  0.2115, -0.6590,  ..., -0.0746, -0.9918,  0.0885]],
+        [[-0.1646,  0.0681, -0.2174,  ..., -0.2981, -1.2703,  0.3786],
+         [ 0.1884,  0.6030, -0.0575,  ..., -0.2902, -0.8518, -0.1747],
+         [ 0.1257,  0.3525, -0.6415,  ..., -0.1354, -1.2083,  0.1687],
+         ...,
+         [ 0.2266,  0.6715, -0.3774,  ...,  0.4224, -0.9471,  0.1133],
+         [-0.1233,  0.4912, -0.4771,  ...,  0.2010, -0.8361, -0.1850],
+         [-0.0382,  0.4622, -0.0689,  ...,  0.0396, -1.2020, -0.1348]]],
+       device='cuda:0', grad_fn=<SelectBackward0>)
+tensor([[-0.5317, -0.3564, -0.0076,  ...,  0.0923, -1.2345, -0.1686],
+        [-0.5698,  0.3558,  0.5054,  ...,  0.2522, -1.1637,  0.0342],
+        [-0.2324,  0.5692,  0.1434,  ...,  0.5359, -1.4174, -0.4885],
+        ...,
+        [-0.1051,  0.5128,  0.1264,  ...,  0.2545, -1.5438, -0.2896],
+        [-0.3968, -0.2304, -0.1625,  ...,  0.3031, -1.1312, -0.5047],
+        [-0.5876, -0.0902,  0.1897,  ...,  0.1479, -1.4449, -0.1173]],
+       device='cuda:0', grad_fn=<SelectBackward0>)
+torch.Size([100, 92])
+ 32  	    for samples, targets in metric_logger.log_every(data_loader, print_freq, header):
+ 33  	        samples = samples.to(device)
+ 34  	        targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
+ 35  	
+ 36  	        outputs = model(samples)
+ 37  ->	        loss_dict = criterion(outputs, targets)
+ 38  	        weight_dict = criterion.weight_dict
+ 39  	        losses = sum(loss_dict[k] * weight_dict[k] for k in loss_dict.keys() if k in weight_dict)
+ 40  	
+ 41  	        # reduce losses over all GPUs for logging purposes
+ 42  	        loss_dict_reduced = utils.reduce_dict(loss_dict)
+[{'boxes': tensor([[0.6297, 0.4872, 0.0892, 0.2060],
+        [0.2185, 0.5265, 0.0933, 0.2280],
+        [0.2352, 0.6434, 0.0791, 0.0161],
+        [0.6438, 0.5845, 0.0692, 0.0224]], device='cuda:0'), 'labels': tensor([ 1,  1, 35, 36], device='cuda:0'), 'image_id': tensor([120655], device='cuda:0'), 'area': tensor([6859.5034, 8110.4087,  451.4604,  434.3461], device='cuda:0'), 'iscrowd': tensor([0, 0, 0, 0], device='cuda:0'), 'orig_size': tensor([427, 640], device='cuda:0'), 'size': tensor([ 768, 1151], device='cuda:0')}, {'boxes': tensor([[0.3835, 0.0788, 0.4960, 0.1575],
+        [0.3956, 0.6838, 0.2311, 0.6325]], device='cuda:0'), 'labels': tensor([13,  1], device='cuda:0'), 'image_id': tensor([301300], device='cuda:0'), 'area': tensor([26779.9336, 50086.6445], device='cuda:0'), 'iscrowd': tensor([0, 0], device='cuda:0'), 'orig_size': tensor([500, 375], device='cuda:0'), 'size': tensor([595, 576], device='cuda:0')}, {'boxes': tensor([[0.1037, 0.6571, 0.2075, 0.0989],
+        [0.7526, 0.5771, 0.2923, 0.0792],
+        [0.2912, 0.6865, 0.2130, 0.4392],
+        [0.1003, 0.5778, 0.0701, 0.0545],
+        [0.0469, 0.5947, 0.0938, 0.0767],
+        [0.1703, 0.5820, 0.0785, 0.0593],
+        [0.4671, 0.5179, 0.1186, 0.0850],
+        [0.7084, 0.5474, 0.1008, 0.0663],
+        [0.0117, 0.6030, 0.0233, 0.0882],
+        [0.0076, 0.4335, 0.0151, 0.1135]], device='cuda:0'), 'labels': tensor([9, 9, 1, 1, 1, 1, 1, 1, 1, 1], device='cuda:0'), 'image_id': tensor([496943], device='cuda:0'), 'area': tensor([10563.9951, 11920.9531, 48179.6836,  1969.0464,  3704.7390,  2397.9111,
+         5189.7075,  3440.5730,  1060.4590,   882.8327], device='cuda:0'), 'iscrowd': tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0'), 'orig_size': tensor([480, 640], device='cuda:0'), 'size': tensor([894, 576], device='cuda:0')}, {'boxes': tensor([[0.6154, 0.5245, 0.7691, 0.9285]], device='cuda:0'), 'labels': tensor([88], device='cuda:0'), 'image_id': tensor([338419], device='cuda:0'), 'area': tensor([376583.5312], device='cuda:0'), 'iscrowd': tensor([0], device='cuda:0'), 'orig_size': tensor([375, 500], device='cuda:0'), 'size': tensor([704, 749], device='cuda:0')}]
+SetCriterion(
+  (matcher): HungarianMatcher()
+)
+[{'boxes': tensor([[0.6297, 0.4872, 0.0892, 0.2060],
+        [0.2185, 0.5265, 0.0933, 0.2280],
+        [0.2352, 0.6434, 0.0791, 0.0161],
+        [0.6438, 0.5845, 0.0692, 0.0224]], device='cuda:0'), 'labels': tensor([ 1,  1, 35, 36], device='cuda:0'), 'image_id': tensor([120655], device='cuda:0'), 'area': tensor([6859.5034, 8110.4087,  451.4604,  434.3461], device='cuda:0'), 'iscrowd': tensor([0, 0, 0, 0], device='cuda:0'), 'orig_size': tensor([427, 640], device='cuda:0'), 'size': tensor([ 768, 1151], device='cuda:0')}, {'boxes': tensor([[0.3835, 0.0788, 0.4960, 0.1575],
+        [0.3956, 0.6838, 0.2311, 0.6325]], device='cuda:0'), 'labels': tensor([13,  1], device='cuda:0'), 'image_id': tensor([301300], device='cuda:0'), 'area': tensor([26779.9336, 50086.6445], device='cuda:0'), 'iscrowd': tensor([0, 0], device='cuda:0'), 'orig_size': tensor([500, 375], device='cuda:0'), 'size': tensor([595, 576], device='cuda:0')}, {'boxes': tensor([[0.1037, 0.6571, 0.2075, 0.0989],
+        [0.7526, 0.5771, 0.2923, 0.0792],
+        [0.2912, 0.6865, 0.2130, 0.4392],
+        [0.1003, 0.5778, 0.0701, 0.0545],
+        [0.0469, 0.5947, 0.0938, 0.0767],
+        [0.1703, 0.5820, 0.0785, 0.0593],
+        [0.4671, 0.5179, 0.1186, 0.0850],
+        [0.7084, 0.5474, 0.1008, 0.0663],
+        [0.0117, 0.6030, 0.0233, 0.0882],
+        [0.0076, 0.4335, 0.0151, 0.1135]], device='cuda:0'), 'labels': tensor([9, 9, 1, 1, 1, 1, 1, 1, 1, 1], device='cuda:0'), 'image_id': tensor([496943], device='cuda:0'), 'area': tensor([10563.9951, 11920.9531, 48179.6836,  1969.0464,  3704.7390,  2397.9111,
+         5189.7075,  3440.5730,  1060.4590,   882.8327], device='cuda:0'), 'iscrowd': tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0'), 'orig_size': tensor([480, 640], device='cuda:0'), 'size': tensor([894, 576], device='cuda:0')}, {'boxes': tensor([[0.6154, 0.5245, 0.7691, 0.9285]], device='cuda:0'), 'labels': tensor([88], device='cuda:0'), 'image_id': tensor([338419], device='cuda:0'), 'area': tensor([376583.5312], device='cuda:0'), 'iscrowd': tensor([0], device='cuda:0'), 'orig_size': tensor([375, 500], device='cuda:0'), 'size': tensor([704, 749], device='cuda:0')}]
+{'boxes': tensor([[0.6297, 0.4872, 0.0892, 0.2060],
+        [0.2185, 0.5265, 0.0933, 0.2280],
+        [0.2352, 0.6434, 0.0791, 0.0161],
+        [0.6438, 0.5845, 0.0692, 0.0224]], device='cuda:0'), 'labels': tensor([ 1,  1, 35, 36], device='cuda:0'), 'image_id': tensor([120655], device='cuda:0'), 'area': tensor([6859.5034, 8110.4087,  451.4604,  434.3461], device='cuda:0'), 'iscrowd': tensor([0, 0, 0, 0], device='cuda:0'), 'orig_size': tensor([427, 640], device='cuda:0'), 'size': tensor([ 768, 1151], device='cuda:0')}
+*** KeyError: 0
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(38)train_one_epoch()
+-> weight_dict = criterion.weight_dict
+dict_keys(['loss_ce', 'class_error', 'loss_bbox', 'loss_giou', 'cardinality_error', 'loss_ce_0', 'loss_bbox_0', 'loss_giou_0', 'cardinality_error_0', 'loss_ce_1', 'loss_bbox_1', 'loss_giou_1', 'cardinality_error_1', 'loss_ce_2', 'loss_bbox_2', 'loss_giou_2', 'cardinality_error_2', 'loss_ce_3', 'loss_bbox_3', 'loss_giou_3', 'cardinality_error_3', 'loss_ce_4', 'loss_bbox_4', 'loss_giou_4', 'cardinality_error_4'])
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(39)train_one_epoch()
+-> losses = sum(loss_dict[k] * weight_dict[k] for k in loss_dict.keys() if k in weight_dict)
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(42)train_one_epoch()
+-> loss_dict_reduced = utils.reduce_dict(loss_dict)
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(43)train_one_epoch()
+-> loss_dict_reduced_unscaled = {f'{k}_unscaled': v
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(44)train_one_epoch()
+-> for k, v in loss_dict_reduced.items()}
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(43)train_one_epoch()
+-> loss_dict_reduced_unscaled = {f'{k}_unscaled': v
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(45)train_one_epoch()
+-> loss_dict_reduced_scaled = {k: v * weight_dict[k]
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(46)train_one_epoch()
+-> for k, v in loss_dict_reduced.items() if k in weight_dict}
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(45)train_one_epoch()
+-> loss_dict_reduced_scaled = {k: v * weight_dict[k]
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(47)train_one_epoch()
+-> losses_reduced_scaled = sum(loss_dict_reduced_scaled.values())
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(49)train_one_epoch()
+-> loss_value = losses_reduced_scaled.item()
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(51)train_one_epoch()
+-> if not math.isfinite(loss_value):
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(56)train_one_epoch()
+-> optimizer.zero_grad()
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(57)train_one_epoch()
+-> losses.backward()
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(58)train_one_epoch()
+-> if max_norm > 0:
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(59)train_one_epoch()
+-> torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm)
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(60)train_one_epoch()
+-> optimizer.step()
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(62)train_one_epoch()
+-> metric_logger.update(loss=loss_value, **loss_dict_reduced_scaled, **loss_dict_reduced_unscaled)
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(63)train_one_epoch()
+-> metric_logger.update(class_error=loss_dict_reduced['class_error'])
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(64)train_one_epoch()
+-> metric_logger.update(lr=optimizer.param_groups[0]["lr"])
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(32)train_one_epoch()
+-> for samples, targets in metric_logger.log_every(data_loader, print_freq, header):
+Epoch: [0]  [  0/250]  eta: 1 day, 19:48:10  lr: 0.000100  class_error: 100.00  loss: 73.0515 (73.0515)  loss_ce: 4.5679 (4.5679)  loss_bbox: 5.3465 (5.3465)  loss_giou: 2.1626 (2.1626)  loss_ce_0: 4.6168 (4.6168)  loss_bbox_0: 5.1822 (5.1822)  loss_giou_0: 2.2252 (2.2252)  loss_ce_1: 4.6735 (4.6735)  loss_bbox_1: 5.2828 (5.2828)  loss_giou_1: 2.2011 (2.2011)  loss_ce_2: 4.7306 (4.7306)  loss_bbox_2: 5.2595 (5.2595)  loss_giou_2: 2.1953 (2.1953)  loss_ce_3: 4.8561 (4.8561)  loss_bbox_3: 5.3054 (5.3054)  loss_giou_3: 2.1636 (2.1636)  loss_ce_4: 4.8219 (4.8219)  loss_bbox_4: 5.3040 (5.3040)  loss_giou_4: 2.1565 (2.1565)  loss_ce_unscaled: 4.5679 (4.5679)  class_error_unscaled: 100.0000 (100.0000)  loss_bbox_unscaled: 1.0693 (1.0693)  loss_giou_unscaled: 1.0813 (1.0813)  cardinality_error_unscaled: 95.7500 (95.7500)  loss_ce_0_unscaled: 4.6168 (4.6168)  loss_bbox_0_unscaled: 1.0364 (1.0364)  loss_giou_0_unscaled: 1.1126 (1.1126)  cardinality_error_0_unscaled: 95.7500 (95.7500)  loss_ce_1_unscaled: 4.6735 (4.6735)  loss_bbox_1_unscaled: 1.0566 (1.0566)  loss_giou_1_unscaled: 1.1005 (1.1005)  cardinality_error_1_unscaled: 95.7500 (95.7500)  loss_ce_2_unscaled: 4.7306 (4.7306)  loss_bbox_2_unscaled: 1.0519 (1.0519)  loss_giou_2_unscaled: 1.0977 (1.0977)  cardinality_error_2_unscaled: 95.7500 (95.7500)  loss_ce_3_unscaled: 4.8561 (4.8561)  loss_bbox_3_unscaled: 1.0611 (1.0611)  loss_giou_3_unscaled: 1.0818 (1.0818)  cardinality_error_3_unscaled: 95.7500 (95.7500)  loss_ce_4_unscaled: 4.8219 (4.8219)  loss_bbox_4_unscaled: 1.0608 (1.0608)  loss_giou_4_unscaled: 1.0783 (1.0783)  cardinality_error_4_unscaled: 95.7500 (95.7500)  time: 630.7638  data: 1.0412  max mem: 4789
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(33)train_one_epoch()
+-> samples = samples.to(device)
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(34)train_one_epoch()
+-> targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(36)train_one_epoch()
+-> outputs = model(samples)
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(37)train_one_epoch()
+-> loss_dict = criterion(outputs, targets)
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(38)train_one_epoch()
+-> weight_dict = criterion.weight_dict
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(39)train_one_epoch()
+-> losses = sum(loss_dict[k] * weight_dict[k] for k in loss_dict.keys() if k in weight_dict)
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(42)train_one_epoch()
+-> loss_dict_reduced = utils.reduce_dict(loss_dict)
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(43)train_one_epoch()
+-> loss_dict_reduced_unscaled = {f'{k}_unscaled': v
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(44)train_one_epoch()
+-> for k, v in loss_dict_reduced.items()}
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(43)train_one_epoch()
+-> loss_dict_reduced_unscaled = {f'{k}_unscaled': v
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(45)train_one_epoch()
+-> loss_dict_reduced_scaled = {k: v * weight_dict[k]
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(46)train_one_epoch()
+-> for k, v in loss_dict_reduced.items() if k in weight_dict}
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(45)train_one_epoch()
+-> loss_dict_reduced_scaled = {k: v * weight_dict[k]
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(47)train_one_epoch()
+-> losses_reduced_scaled = sum(loss_dict_reduced_scaled.values())
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(49)train_one_epoch()
+-> loss_value = losses_reduced_scaled.item()
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(51)train_one_epoch()
+-> if not math.isfinite(loss_value):
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(56)train_one_epoch()
+-> optimizer.zero_grad()
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(57)train_one_epoch()
+-> losses.backward()
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(58)train_one_epoch()
+-> if max_norm > 0:
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(59)train_one_epoch()
+-> torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm)
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(60)train_one_epoch()
+-> optimizer.step()
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(62)train_one_epoch()
+-> metric_logger.update(loss=loss_value, **loss_dict_reduced_scaled, **loss_dict_reduced_unscaled)
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(63)train_one_epoch()
+-> metric_logger.update(class_error=loss_dict_reduced['class_error'])
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(64)train_one_epoch()
+-> metric_logger.update(lr=optimizer.param_groups[0]["lr"])
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(32)train_one_epoch()
+-> for samples, targets in metric_logger.log_every(data_loader, print_freq, header):
+Epoch: [0]  [ 10/250]  eta: 4:56:30  lr: 0.000100  class_error: 100.00  loss: 57.1598 (57.3159)  loss_ce: 2.4392 (2.5956)  loss_bbox: 4.6657 (4.7427)  loss_giou: 2.1750 (2.2025)  loss_ce_0: 2.3403 (2.6072)  loss_bbox_0: 4.7373 (4.7721)  loss_giou_0: 2.2241 (2.2022)  loss_ce_1: 2.3648 (2.5455)  loss_bbox_1: 4.7693 (4.8024)  loss_giou_1: 2.2011 (2.1891)  loss_ce_2: 2.4853 (2.5726)  loss_bbox_2: 4.7336 (4.7938)  loss_giou_2: 2.1953 (2.1942)  loss_ce_3: 2.5165 (2.6237)  loss_bbox_3: 4.6319 (4.7446)  loss_giou_3: 2.2036 (2.2005)  loss_ce_4: 2.4899 (2.6235)  loss_bbox_4: 4.5772 (4.6951)  loss_giou_4: 2.1975 (2.2088)  loss_ce_unscaled: 2.4392 (2.5956)  class_error_unscaled: 100.0000 (100.0000)  loss_bbox_unscaled: 0.9331 (0.9485)  loss_giou_unscaled: 1.0875 (1.1012)  cardinality_error_unscaled: 7.0000 (14.5000)  loss_ce_0_unscaled: 2.3403 (2.6072)  loss_bbox_0_unscaled: 0.9475 (0.9544)  loss_giou_0_unscaled: 1.1120 (1.1011)  cardinality_error_0_unscaled: 7.0000 (14.5000)  loss_ce_1_unscaled: 2.3648 (2.5455)  loss_bbox_1_unscaled: 0.9539 (0.9605)  loss_giou_1_unscaled: 1.1005 (1.0945)  cardinality_error_1_unscaled: 7.0000 (14.5000)  loss_ce_2_unscaled: 2.4853 (2.5726)  loss_bbox_2_unscaled: 0.9467 (0.9588)  loss_giou_2_unscaled: 1.0977 (1.0971)  cardinality_error_2_unscaled: 7.0000 (14.5000)  loss_ce_3_unscaled: 2.5165 (2.6237)  loss_bbox_3_unscaled: 0.9264 (0.9489)  loss_giou_3_unscaled: 1.1018 (1.1002)  cardinality_error_3_unscaled: 7.0000 (14.5000)  loss_ce_4_unscaled: 2.4899 (2.6235)  loss_bbox_4_unscaled: 0.9154 (0.9390)  loss_giou_4_unscaled: 1.0987 (1.1044)  cardinality_error_4_unscaled: 7.0000 (14.5000)  time: 74.1291  data: 0.1062  max mem: 6043
+Epoch: [0]  [ 20/250]  eta: 2:29:14  lr: 0.000100  class_error: 100.00  loss: 51.9565 (54.7424)  loss_ce: 2.0384 (2.2390)  loss_bbox: 4.3874 (4.5811)  loss_giou: 2.2670 (2.2945)  loss_ce_0: 1.9895 (2.2460)  loss_bbox_0: 4.4578 (4.5981)  loss_giou_0: 2.2533 (2.2898)  loss_ce_1: 1.9721 (2.2083)  loss_bbox_1: 4.5176 (4.6426)  loss_giou_1: 2.2420 (2.2760)  loss_ce_2: 2.0622 (2.2189)  loss_bbox_2: 4.4588 (4.6250)  loss_giou_2: 2.2579 (2.2815)  loss_ce_3: 2.0494 (2.2583)  loss_bbox_3: 4.4008 (4.5903)  loss_giou_3: 2.2659 (2.2928)  loss_ce_4: 1.9736 (2.2456)  loss_bbox_4: 4.3765 (4.5560)  loss_giou_4: 2.2666 (2.2986)  loss_ce_unscaled: 2.0384 (2.2390)  class_error_unscaled: 100.0000 (100.0000)  loss_bbox_unscaled: 0.8775 (0.9162)  loss_giou_unscaled: 1.1335 (1.1472)  cardinality_error_unscaled: 4.5000 (9.7976)  loss_ce_0_unscaled: 1.9895 (2.2460)  loss_bbox_0_unscaled: 0.8916 (0.9196)  loss_giou_0_unscaled: 1.1267 (1.1449)  cardinality_error_0_unscaled: 4.5000 (9.7976)  loss_ce_1_unscaled: 1.9721 (2.2083)  loss_bbox_1_unscaled: 0.9035 (0.9285)  loss_giou_1_unscaled: 1.1210 (1.1380)  cardinality_error_1_unscaled: 4.5000 (9.7976)  loss_ce_2_unscaled: 2.0622 (2.2189)  loss_bbox_2_unscaled: 0.8918 (0.9250)  loss_giou_2_unscaled: 1.1289 (1.1407)  cardinality_error_2_unscaled: 4.5000 (9.7976)  loss_ce_3_unscaled: 2.0494 (2.2583)  loss_bbox_3_unscaled: 0.8802 (0.9181)  loss_giou_3_unscaled: 1.1329 (1.1464)  cardinality_error_3_unscaled: 4.5000 (9.7976)  loss_ce_4_unscaled: 1.9736 (2.2456)  loss_bbox_4_unscaled: 0.8753 (0.9112)  loss_giou_4_unscaled: 1.1333 (1.1493)  cardinality_error_4_unscaled: 4.5000 (9.7976)  time: 9.3415  data: 0.0111  max mem: 6897
+Program interrupted. (Use 'cont' to resume).
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/box_ops.py(52)generalized_box_iou()
+-> assert (boxes2[:, 2:] >= boxes2[:, :2]).all()
+*** NameError: name 'edit' is not defined
+Traceback (most recent call last):
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/main.py", line 263, in <module>
+    main(args)
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/main.py", line 211, in main
+    train_stats = train_one_epoch(
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py", line 32, in train_one_epoch
+    for samples, targets in metric_logger.log_every(data_loader, print_freq, header):
+  File "/home/kwangrok/anaconda3/envs/mm_torch113/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/models/detr.py", line 225, in forward
+    indices = self.matcher(outputs_without_aux, targets)
+  File "/home/kwangrok/anaconda3/envs/mm_torch113/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/kwangrok/anaconda3/envs/mm_torch113/lib/python3.9/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/models/matcher.py", line 74, in forward
+    cost_giou = -generalized_box_iou(box_cxcywh_to_xyxy(out_bbox), box_cxcywh_to_xyxy(tgt_bbox))
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/util/box_ops.py", line 52, in generalized_box_iou
+    assert (boxes2[:, 2:] >= boxes2[:, :2]).all()
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/util/box_ops.py", line 52, in generalized_box_iou
+    assert (boxes2[:, 2:] >= boxes2[:, :2]).all()
+  File "/home/kwangrok/anaconda3/envs/mm_torch113/lib/python3.9/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/kwangrok/anaconda3/envs/mm_torch113/lib/python3.9/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

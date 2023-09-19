@@ -1,0 +1,2 @@
+2023-09-19 13:56:35 ERROR dropped chunk 400 Client Error: Bad Request for url: https://api.wandb.ai/files/jinlovespho/detr_test/vpca683h/file_stream
+NoneType: None

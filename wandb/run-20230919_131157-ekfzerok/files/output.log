@@ -1,0 +1,17 @@
+Start training
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(32)train_one_epoch()
+-> for samples, targets in metric_logger.log_every(data_loader, print_freq, header):
+Traceback (most recent call last):
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/main.py", line 263, in <module>
+    main(args)
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/main.py", line 211, in main
+    train_stats = train_one_epoch(
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py", line 32, in train_one_epoch
+    for samples, targets in metric_logger.log_every(data_loader, print_freq, header):
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py", line 32, in train_one_epoch
+    for samples, targets in metric_logger.log_every(data_loader, print_freq, header):
+  File "/home/kwangrok/anaconda3/envs/mm_torch113/lib/python3.9/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/kwangrok/anaconda3/envs/mm_torch113/lib/python3.9/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

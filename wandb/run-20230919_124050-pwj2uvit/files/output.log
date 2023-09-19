@@ -1,0 +1,261 @@
+Start training
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(32)train_one_epoch()
+-> for samples, targets in metric_logger.log_every(data_loader, print_freq, header):
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(224)log_every()
+-> for obj in iterable:
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(225)log_every()
+-> data_time.update(time.time() - end)
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(226)log_every()
+-> yield obj
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(227)log_every()
+-> iter_time.update(time.time() - end)
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(228)log_every()
+-> if i % print_freq == 0 or i == len(iterable) - 1:
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(229)log_every()
+-> eta_seconds = iter_time.global_avg * (len(iterable) - i)
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(230)log_every()
+-> eta_string = str(datetime.timedelta(seconds=int(eta_seconds)))
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(231)log_every()
+-> if torch.cuda.is_available():
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(233)log_every()
+-> print(log_msg.format(
+*** NameError: name 'meters' is not defined
+<util.misc.MetricLogger object at 0x7f62c27efd30>
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'add_meter', 'delimiter', 'log_every', 'meters', 'synchronize_between_processes', 'update']
+*** AttributeError: 'MetricLogger' object has no attribute 'updatae'
+<bound method MetricLogger.update of <util.misc.MetricLogger object at 0x7f62c27efd30>>
+<bound method MetricLogger.log_every of <util.misc.MetricLogger object at 0x7f62c27efd30>>
+['__call__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__func__', '__ge__', '__get__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__self__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__']
+<util.misc.MetricLogger object at 0x7f62c27efd30>
+defaultdict(<class 'util.misc.SmoothedValue'>, {'lr': <util.misc.SmoothedValue object at 0x7f62c27ef6a0>, 'class_error': <util.misc.SmoothedValue object at 0x7f62c279b0d0>, 'loss': <util.misc.SmoothedValue object at 0x7f62c2763490>, 'loss_ce': <util.misc.SmoothedValue object at 0x7f62c2763400>, 'loss_bbox': <util.misc.SmoothedValue object at 0x7f62c2763700>, 'loss_giou': <util.misc.SmoothedValue object at 0x7f62c2763550>, 'loss_ce_0': <util.misc.SmoothedValue object at 0x7f62c2763760>, 'loss_bbox_0': <util.misc.SmoothedValue object at 0x7f62c2763970>, 'loss_giou_0': <util.misc.SmoothedValue object at 0x7f62c2763b20>, 'loss_ce_1': <util.misc.SmoothedValue object at 0x7f62c2763a30>, 'loss_bbox_1': <util.misc.SmoothedValue object at 0x7f62c2763d90>, 'loss_giou_1': <util.misc.SmoothedValue object at 0x7f62c2763cd0>, 'loss_ce_2': <util.misc.SmoothedValue object at 0x7f62c03b9070>, 'loss_bbox_2': <util.misc.SmoothedValue object at 0x7f62c03b90d0>, 'loss_giou_2': <util.misc.SmoothedValue object at 0x7f62c03b92e0>, 'loss_ce_3': <util.misc.SmoothedValue object at 0x7f62c03b9220>, 'loss_bbox_3': <util.misc.SmoothedValue object at 0x7f62c03b9520>, 'loss_giou_3': <util.misc.SmoothedValue object at 0x7f62c03b9370>, 'loss_ce_4': <util.misc.SmoothedValue object at 0x7f62c03b9790>, 'loss_bbox_4': <util.misc.SmoothedValue object at 0x7f62c03b96d0>, 'loss_giou_4': <util.misc.SmoothedValue object at 0x7f62c03b9a30>, 'loss_ce_unscaled': <util.misc.SmoothedValue object at 0x7f62c03b9940>, 'class_error_unscaled': <util.misc.SmoothedValue object at 0x7f62c03b9ca0>, 'loss_bbox_unscaled': <util.misc.SmoothedValue object at 0x7f62c03b9be0>, 'loss_giou_unscaled': <util.misc.SmoothedValue object at 0x7f62c03b9f40>, 'cardinality_error_unscaled': <util.misc.SmoothedValue object at 0x7f62c03b9e50>, 'loss_ce_0_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd190>, 'loss_bbox_0_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd0d0>, 'loss_giou_0_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd430>, 'cardinality_error_0_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd340>, 'loss_ce_1_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd6a0>, 'loss_bbox_1_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd5e0>, 'loss_giou_1_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd940>, 'cardinality_error_1_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd850>, 'loss_ce_2_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bda90>, 'loss_bbox_2_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bdaf0>, 'loss_giou_2_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bddf0>, 'cardinality_error_2_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bdd00>, 'loss_ce_3_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c10a0>, 'loss_bbox_3_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c1070>, 'loss_giou_3_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c1340>, 'cardinality_error_3_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c1250>, 'loss_ce_4_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c15b0>, 'loss_bbox_4_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c14f0>, 'loss_giou_4_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c16d0>, 'cardinality_error_4_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c1670>})
+*** SyntaxError: unmatched ')'
+['__class__', '__class_getitem__', '__contains__', '__copy__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__ior__', '__iter__', '__le__', '__len__', '__lt__', '__missing__', '__ne__', '__new__', '__or__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__ror__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'default_factory', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+<built-in method items of collections.defaultdict object at 0x7f62c27bb950>
+defaultdict(<class 'util.misc.SmoothedValue'>, {'lr': <util.misc.SmoothedValue object at 0x7f62c27ef6a0>, 'class_error': <util.misc.SmoothedValue object at 0x7f62c279b0d0>, 'loss': <util.misc.SmoothedValue object at 0x7f62c2763490>, 'loss_ce': <util.misc.SmoothedValue object at 0x7f62c2763400>, 'loss_bbox': <util.misc.SmoothedValue object at 0x7f62c2763700>, 'loss_giou': <util.misc.SmoothedValue object at 0x7f62c2763550>, 'loss_ce_0': <util.misc.SmoothedValue object at 0x7f62c2763760>, 'loss_bbox_0': <util.misc.SmoothedValue object at 0x7f62c2763970>, 'loss_giou_0': <util.misc.SmoothedValue object at 0x7f62c2763b20>, 'loss_ce_1': <util.misc.SmoothedValue object at 0x7f62c2763a30>, 'loss_bbox_1': <util.misc.SmoothedValue object at 0x7f62c2763d90>, 'loss_giou_1': <util.misc.SmoothedValue object at 0x7f62c2763cd0>, 'loss_ce_2': <util.misc.SmoothedValue object at 0x7f62c03b9070>, 'loss_bbox_2': <util.misc.SmoothedValue object at 0x7f62c03b90d0>, 'loss_giou_2': <util.misc.SmoothedValue object at 0x7f62c03b92e0>, 'loss_ce_3': <util.misc.SmoothedValue object at 0x7f62c03b9220>, 'loss_bbox_3': <util.misc.SmoothedValue object at 0x7f62c03b9520>, 'loss_giou_3': <util.misc.SmoothedValue object at 0x7f62c03b9370>, 'loss_ce_4': <util.misc.SmoothedValue object at 0x7f62c03b9790>, 'loss_bbox_4': <util.misc.SmoothedValue object at 0x7f62c03b96d0>, 'loss_giou_4': <util.misc.SmoothedValue object at 0x7f62c03b9a30>, 'loss_ce_unscaled': <util.misc.SmoothedValue object at 0x7f62c03b9940>, 'class_error_unscaled': <util.misc.SmoothedValue object at 0x7f62c03b9ca0>, 'loss_bbox_unscaled': <util.misc.SmoothedValue object at 0x7f62c03b9be0>, 'loss_giou_unscaled': <util.misc.SmoothedValue object at 0x7f62c03b9f40>, 'cardinality_error_unscaled': <util.misc.SmoothedValue object at 0x7f62c03b9e50>, 'loss_ce_0_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd190>, 'loss_bbox_0_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd0d0>, 'loss_giou_0_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd430>, 'cardinality_error_0_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd340>, 'loss_ce_1_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd6a0>, 'loss_bbox_1_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd5e0>, 'loss_giou_1_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd940>, 'cardinality_error_1_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd850>, 'loss_ce_2_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bda90>, 'loss_bbox_2_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bdaf0>, 'loss_giou_2_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bddf0>, 'cardinality_error_2_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bdd00>, 'loss_ce_3_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c10a0>, 'loss_bbox_3_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c1070>, 'loss_giou_3_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c1340>, 'cardinality_error_3_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c1250>, 'loss_ce_4_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c15b0>, 'loss_bbox_4_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c14f0>, 'loss_giou_4_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c16d0>, 'cardinality_error_4_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c1670>})
+dict_keys(['lr', 'class_error', 'loss', 'loss_ce', 'loss_bbox', 'loss_giou', 'loss_ce_0', 'loss_bbox_0', 'loss_giou_0', 'loss_ce_1', 'loss_bbox_1', 'loss_giou_1', 'loss_ce_2', 'loss_bbox_2', 'loss_giou_2', 'loss_ce_3', 'loss_bbox_3', 'loss_giou_3', 'loss_ce_4', 'loss_bbox_4', 'loss_giou_4', 'loss_ce_unscaled', 'class_error_unscaled', 'loss_bbox_unscaled', 'loss_giou_unscaled', 'cardinality_error_unscaled', 'loss_ce_0_unscaled', 'loss_bbox_0_unscaled', 'loss_giou_0_unscaled', 'cardinality_error_0_unscaled', 'loss_ce_1_unscaled', 'loss_bbox_1_unscaled', 'loss_giou_1_unscaled', 'cardinality_error_1_unscaled', 'loss_ce_2_unscaled', 'loss_bbox_2_unscaled', 'loss_giou_2_unscaled', 'cardinality_error_2_unscaled', 'loss_ce_3_unscaled', 'loss_bbox_3_unscaled', 'loss_giou_3_unscaled', 'cardinality_error_3_unscaled', 'loss_ce_4_unscaled', 'loss_bbox_4_unscaled', 'loss_giou_4_unscaled', 'cardinality_error_4_unscaled'])
+<util.misc.SmoothedValue object at 0x7f62c27ef6a0>
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'avg', 'count', 'deque', 'fmt', 'global_avg', 'max', 'median', 'synchronize_between_processes', 'total', 'update', 'value']
+0.0001
+<util.misc.MetricLogger object at 0x7f62c27efd30>
+defaultdict(<class 'util.misc.SmoothedValue'>, {'lr': <util.misc.SmoothedValue object at 0x7f62c27ef6a0>, 'class_error': <util.misc.SmoothedValue object at 0x7f62c279b0d0>, 'loss': <util.misc.SmoothedValue object at 0x7f62c2763490>, 'loss_ce': <util.misc.SmoothedValue object at 0x7f62c2763400>, 'loss_bbox': <util.misc.SmoothedValue object at 0x7f62c2763700>, 'loss_giou': <util.misc.SmoothedValue object at 0x7f62c2763550>, 'loss_ce_0': <util.misc.SmoothedValue object at 0x7f62c2763760>, 'loss_bbox_0': <util.misc.SmoothedValue object at 0x7f62c2763970>, 'loss_giou_0': <util.misc.SmoothedValue object at 0x7f62c2763b20>, 'loss_ce_1': <util.misc.SmoothedValue object at 0x7f62c2763a30>, 'loss_bbox_1': <util.misc.SmoothedValue object at 0x7f62c2763d90>, 'loss_giou_1': <util.misc.SmoothedValue object at 0x7f62c2763cd0>, 'loss_ce_2': <util.misc.SmoothedValue object at 0x7f62c03b9070>, 'loss_bbox_2': <util.misc.SmoothedValue object at 0x7f62c03b90d0>, 'loss_giou_2': <util.misc.SmoothedValue object at 0x7f62c03b92e0>, 'loss_ce_3': <util.misc.SmoothedValue object at 0x7f62c03b9220>, 'loss_bbox_3': <util.misc.SmoothedValue object at 0x7f62c03b9520>, 'loss_giou_3': <util.misc.SmoothedValue object at 0x7f62c03b9370>, 'loss_ce_4': <util.misc.SmoothedValue object at 0x7f62c03b9790>, 'loss_bbox_4': <util.misc.SmoothedValue object at 0x7f62c03b96d0>, 'loss_giou_4': <util.misc.SmoothedValue object at 0x7f62c03b9a30>, 'loss_ce_unscaled': <util.misc.SmoothedValue object at 0x7f62c03b9940>, 'class_error_unscaled': <util.misc.SmoothedValue object at 0x7f62c03b9ca0>, 'loss_bbox_unscaled': <util.misc.SmoothedValue object at 0x7f62c03b9be0>, 'loss_giou_unscaled': <util.misc.SmoothedValue object at 0x7f62c03b9f40>, 'cardinality_error_unscaled': <util.misc.SmoothedValue object at 0x7f62c03b9e50>, 'loss_ce_0_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd190>, 'loss_bbox_0_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd0d0>, 'loss_giou_0_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd430>, 'cardinality_error_0_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd340>, 'loss_ce_1_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd6a0>, 'loss_bbox_1_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd5e0>, 'loss_giou_1_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd940>, 'cardinality_error_1_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd850>, 'loss_ce_2_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bda90>, 'loss_bbox_2_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bdaf0>, 'loss_giou_2_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bddf0>, 'cardinality_error_2_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bdd00>, 'loss_ce_3_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c10a0>, 'loss_bbox_3_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c1070>, 'loss_giou_3_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c1340>, 'cardinality_error_3_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c1250>, 'loss_ce_4_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c15b0>, 'loss_bbox_4_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c14f0>, 'loss_giou_4_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c16d0>, 'cardinality_error_4_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c1670>})
+dict_keys(['lr', 'class_error', 'loss', 'loss_ce', 'loss_bbox', 'loss_giou', 'loss_ce_0', 'loss_bbox_0', 'loss_giou_0', 'loss_ce_1', 'loss_bbox_1', 'loss_giou_1', 'loss_ce_2', 'loss_bbox_2', 'loss_giou_2', 'loss_ce_3', 'loss_bbox_3', 'loss_giou_3', 'loss_ce_4', 'loss_bbox_4', 'loss_giou_4', 'loss_ce_unscaled', 'class_error_unscaled', 'loss_bbox_unscaled', 'loss_giou_unscaled', 'cardinality_error_unscaled', 'loss_ce_0_unscaled', 'loss_bbox_0_unscaled', 'loss_giou_0_unscaled', 'cardinality_error_0_unscaled', 'loss_ce_1_unscaled', 'loss_bbox_1_unscaled', 'loss_giou_1_unscaled', 'cardinality_error_1_unscaled', 'loss_ce_2_unscaled', 'loss_bbox_2_unscaled', 'loss_giou_2_unscaled', 'cardinality_error_2_unscaled', 'loss_ce_3_unscaled', 'loss_bbox_3_unscaled', 'loss_giou_3_unscaled', 'cardinality_error_3_unscaled', 'loss_ce_4_unscaled', 'loss_bbox_4_unscaled', 'loss_giou_4_unscaled', 'cardinality_error_4_unscaled'])
+<util.misc.SmoothedValue object at 0x7f62c279b0d0>
+100.0
+dict_keys(['lr', 'class_error', 'loss', 'loss_ce', 'loss_bbox', 'loss_giou', 'loss_ce_0', 'loss_bbox_0', 'loss_giou_0', 'loss_ce_1', 'loss_bbox_1', 'loss_giou_1', 'loss_ce_2', 'loss_bbox_2', 'loss_giou_2', 'loss_ce_3', 'loss_bbox_3', 'loss_giou_3', 'loss_ce_4', 'loss_bbox_4', 'loss_giou_4', 'loss_ce_unscaled', 'class_error_unscaled', 'loss_bbox_unscaled', 'loss_giou_unscaled', 'cardinality_error_unscaled', 'loss_ce_0_unscaled', 'loss_bbox_0_unscaled', 'loss_giou_0_unscaled', 'cardinality_error_0_unscaled', 'loss_ce_1_unscaled', 'loss_bbox_1_unscaled', 'loss_giou_1_unscaled', 'cardinality_error_1_unscaled', 'loss_ce_2_unscaled', 'loss_bbox_2_unscaled', 'loss_giou_2_unscaled', 'cardinality_error_2_unscaled', 'loss_ce_3_unscaled', 'loss_bbox_3_unscaled', 'loss_giou_3_unscaled', 'cardinality_error_3_unscaled', 'loss_ce_4_unscaled', 'loss_bbox_4_unscaled', 'loss_giou_4_unscaled', 'cardinality_error_4_unscaled'])
+['lr', 'class_error', 'loss', 'loss_ce', 'loss_bbox', 'loss_giou', 'loss_ce_0', 'loss_bbox_0', 'loss_giou_0', 'loss_ce_1', 'loss_bbox_1', 'loss_giou_1', 'loss_ce_2', 'loss_bbox_2', 'loss_giou_2', 'loss_ce_3', 'loss_bbox_3', 'loss_giou_3', 'loss_ce_4', 'loss_bbox_4', 'loss_giou_4', 'loss_ce_unscaled', 'class_error_unscaled', 'loss_bbox_unscaled', 'loss_giou_unscaled', 'cardinality_error_unscaled', 'loss_ce_0_unscaled', 'loss_bbox_0_unscaled', 'loss_giou_0_unscaled', 'cardinality_error_0_unscaled', 'loss_ce_1_unscaled', 'loss_bbox_1_unscaled', 'loss_giou_1_unscaled', 'cardinality_error_1_unscaled', 'loss_ce_2_unscaled', 'loss_bbox_2_unscaled', 'loss_giou_2_unscaled', 'cardinality_error_2_unscaled', 'loss_ce_3_unscaled', 'loss_bbox_3_unscaled', 'loss_giou_3_unscaled', 'cardinality_error_3_unscaled', 'loss_ce_4_unscaled', 'loss_bbox_4_unscaled', 'loss_giou_4_unscaled', 'cardinality_error_4_unscaled']
+['lr', 'class_error', 'loss', 'loss_ce', 'loss_bbox', 'loss_giou', 'loss_ce_0', 'loss_bbox_0', 'loss_giou_0', 'loss_ce_1', 'loss_bbox_1', 'loss_giou_1', 'loss_ce_2', 'loss_bbox_2', 'loss_giou_2', 'loss_ce_3', 'loss_bbox_3', 'loss_giou_3', 'loss_ce_4', 'loss_bbox_4', 'loss_giou_4', 'loss_ce_unscaled', 'class_error_unscaled', 'loss_bbox_unscaled', 'loss_giou_unscaled', 'cardinality_error_unscaled', 'loss_ce_0_unscaled', 'loss_bbox_0_unscaled', 'loss_giou_0_unscaled', 'cardinality_error_0_unscaled', 'loss_ce_1_unscaled', 'loss_bbox_1_unscaled', 'loss_giou_1_unscaled', 'cardinality_error_1_unscaled', 'loss_ce_2_unscaled', 'loss_bbox_2_unscaled', 'loss_giou_2_unscaled', 'cardinality_error_2_unscaled', 'loss_ce_3_unscaled', 'loss_bbox_3_unscaled', 'loss_giou_3_unscaled', 'cardinality_error_3_unscaled', 'loss_ce_4_unscaled', 'loss_bbox_4_unscaled', 'loss_giou_4_unscaled', 'cardinality_error_4_unscaled']
+<util.misc.MetricLogger object at 0x7f62c27efd30>
+dict_keys(['lr', 'class_error', 'loss', 'loss_ce', 'loss_bbox', 'loss_giou', 'loss_ce_0', 'loss_bbox_0', 'loss_giou_0', 'loss_ce_1', 'loss_bbox_1', 'loss_giou_1', 'loss_ce_2', 'loss_bbox_2', 'loss_giou_2', 'loss_ce_3', 'loss_bbox_3', 'loss_giou_3', 'loss_ce_4', 'loss_bbox_4', 'loss_giou_4', 'loss_ce_unscaled', 'class_error_unscaled', 'loss_bbox_unscaled', 'loss_giou_unscaled', 'cardinality_error_unscaled', 'loss_ce_0_unscaled', 'loss_bbox_0_unscaled', 'loss_giou_0_unscaled', 'cardinality_error_0_unscaled', 'loss_ce_1_unscaled', 'loss_bbox_1_unscaled', 'loss_giou_1_unscaled', 'cardinality_error_1_unscaled', 'loss_ce_2_unscaled', 'loss_bbox_2_unscaled', 'loss_giou_2_unscaled', 'cardinality_error_2_unscaled', 'loss_ce_3_unscaled', 'loss_bbox_3_unscaled', 'loss_giou_3_unscaled', 'cardinality_error_3_unscaled', 'loss_ce_4_unscaled', 'loss_bbox_4_unscaled', 'loss_giou_4_unscaled', 'cardinality_error_4_unscaled'])
+defaultdict(<class 'util.misc.SmoothedValue'>, {'lr': <util.misc.SmoothedValue object at 0x7f62c27ef6a0>, 'class_error': <util.misc.SmoothedValue object at 0x7f62c279b0d0>, 'loss': <util.misc.SmoothedValue object at 0x7f62c2763490>, 'loss_ce': <util.misc.SmoothedValue object at 0x7f62c2763400>, 'loss_bbox': <util.misc.SmoothedValue object at 0x7f62c2763700>, 'loss_giou': <util.misc.SmoothedValue object at 0x7f62c2763550>, 'loss_ce_0': <util.misc.SmoothedValue object at 0x7f62c2763760>, 'loss_bbox_0': <util.misc.SmoothedValue object at 0x7f62c2763970>, 'loss_giou_0': <util.misc.SmoothedValue object at 0x7f62c2763b20>, 'loss_ce_1': <util.misc.SmoothedValue object at 0x7f62c2763a30>, 'loss_bbox_1': <util.misc.SmoothedValue object at 0x7f62c2763d90>, 'loss_giou_1': <util.misc.SmoothedValue object at 0x7f62c2763cd0>, 'loss_ce_2': <util.misc.SmoothedValue object at 0x7f62c03b9070>, 'loss_bbox_2': <util.misc.SmoothedValue object at 0x7f62c03b90d0>, 'loss_giou_2': <util.misc.SmoothedValue object at 0x7f62c03b92e0>, 'loss_ce_3': <util.misc.SmoothedValue object at 0x7f62c03b9220>, 'loss_bbox_3': <util.misc.SmoothedValue object at 0x7f62c03b9520>, 'loss_giou_3': <util.misc.SmoothedValue object at 0x7f62c03b9370>, 'loss_ce_4': <util.misc.SmoothedValue object at 0x7f62c03b9790>, 'loss_bbox_4': <util.misc.SmoothedValue object at 0x7f62c03b96d0>, 'loss_giou_4': <util.misc.SmoothedValue object at 0x7f62c03b9a30>, 'loss_ce_unscaled': <util.misc.SmoothedValue object at 0x7f62c03b9940>, 'class_error_unscaled': <util.misc.SmoothedValue object at 0x7f62c03b9ca0>, 'loss_bbox_unscaled': <util.misc.SmoothedValue object at 0x7f62c03b9be0>, 'loss_giou_unscaled': <util.misc.SmoothedValue object at 0x7f62c03b9f40>, 'cardinality_error_unscaled': <util.misc.SmoothedValue object at 0x7f62c03b9e50>, 'loss_ce_0_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd190>, 'loss_bbox_0_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd0d0>, 'loss_giou_0_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd430>, 'cardinality_error_0_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd340>, 'loss_ce_1_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd6a0>, 'loss_bbox_1_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd5e0>, 'loss_giou_1_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd940>, 'cardinality_error_1_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bd850>, 'loss_ce_2_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bda90>, 'loss_bbox_2_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bdaf0>, 'loss_giou_2_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bddf0>, 'cardinality_error_2_unscaled': <util.misc.SmoothedValue object at 0x7f62c03bdd00>, 'loss_ce_3_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c10a0>, 'loss_bbox_3_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c1070>, 'loss_giou_3_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c1340>, 'cardinality_error_3_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c1250>, 'loss_ce_4_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c15b0>, 'loss_bbox_4_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c14f0>, 'loss_giou_4_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c16d0>, 'cardinality_error_4_unscaled': <util.misc.SmoothedValue object at 0x7f62c03c1670>})
+*** NameError: name 'self' is not defined
+<util.misc.MetricLogger object at 0x7f62c27efd30>
+*** AttributeError: 'SmoothedValue' object has no attribute 'values'
+0.0001
+*** NameError: name 'self' is not defined
+*** NameError: name 'oj' is not defined
+['lr', 'class_error', 'loss', 'loss_ce', 'loss_bbox', 'loss_giou', 'loss_ce_0', 'loss_bbox_0', 'loss_giou_0', 'loss_ce_1', 'loss_bbox_1', 'loss_giou_1', 'loss_ce_2', 'loss_bbox_2', 'loss_giou_2', 'loss_ce_3', 'loss_bbox_3', 'loss_giou_3', 'loss_ce_4', 'loss_bbox_4', 'loss_giou_4', 'loss_ce_unscaled', 'class_error_unscaled', 'loss_bbox_unscaled', 'loss_giou_unscaled', 'cardinality_error_unscaled', 'loss_ce_0_unscaled', 'loss_bbox_0_unscaled', 'loss_giou_0_unscaled', 'cardinality_error_0_unscaled', 'loss_ce_1_unscaled', 'loss_bbox_1_unscaled', 'loss_giou_1_unscaled', 'cardinality_error_1_unscaled', 'loss_ce_2_unscaled', 'loss_bbox_2_unscaled', 'loss_giou_2_unscaled', 'cardinality_error_2_unscaled', 'loss_ce_3_unscaled', 'loss_bbox_3_unscaled', 'loss_giou_3_unscaled', 'cardinality_error_3_unscaled', 'loss_ce_4_unscaled', 'loss_bbox_4_unscaled', 'loss_giou_4_unscaled', 'cardinality_error_4_unscaled']
+*** NameError: name 'self' is not defined
+dict_items([('lr', <util.misc.SmoothedValue object at 0x7f62c27ef6a0>), ('class_error', <util.misc.SmoothedValue object at 0x7f62c279b0d0>), ('loss', <util.misc.SmoothedValue object at 0x7f62c2763490>), ('loss_ce', <util.misc.SmoothedValue object at 0x7f62c2763400>), ('loss_bbox', <util.misc.SmoothedValue object at 0x7f62c2763700>), ('loss_giou', <util.misc.SmoothedValue object at 0x7f62c2763550>), ('loss_ce_0', <util.misc.SmoothedValue object at 0x7f62c2763760>), ('loss_bbox_0', <util.misc.SmoothedValue object at 0x7f62c2763970>), ('loss_giou_0', <util.misc.SmoothedValue object at 0x7f62c2763b20>), ('loss_ce_1', <util.misc.SmoothedValue object at 0x7f62c2763a30>), ('loss_bbox_1', <util.misc.SmoothedValue object at 0x7f62c2763d90>), ('loss_giou_1', <util.misc.SmoothedValue object at 0x7f62c2763cd0>), ('loss_ce_2', <util.misc.SmoothedValue object at 0x7f62c03b9070>), ('loss_bbox_2', <util.misc.SmoothedValue object at 0x7f62c03b90d0>), ('loss_giou_2', <util.misc.SmoothedValue object at 0x7f62c03b92e0>), ('loss_ce_3', <util.misc.SmoothedValue object at 0x7f62c03b9220>), ('loss_bbox_3', <util.misc.SmoothedValue object at 0x7f62c03b9520>), ('loss_giou_3', <util.misc.SmoothedValue object at 0x7f62c03b9370>), ('loss_ce_4', <util.misc.SmoothedValue object at 0x7f62c03b9790>), ('loss_bbox_4', <util.misc.SmoothedValue object at 0x7f62c03b96d0>), ('loss_giou_4', <util.misc.SmoothedValue object at 0x7f62c03b9a30>), ('loss_ce_unscaled', <util.misc.SmoothedValue object at 0x7f62c03b9940>), ('class_error_unscaled', <util.misc.SmoothedValue object at 0x7f62c03b9ca0>), ('loss_bbox_unscaled', <util.misc.SmoothedValue object at 0x7f62c03b9be0>), ('loss_giou_unscaled', <util.misc.SmoothedValue object at 0x7f62c03b9f40>), ('cardinality_error_unscaled', <util.misc.SmoothedValue object at 0x7f62c03b9e50>), ('loss_ce_0_unscaled', <util.misc.SmoothedValue object at 0x7f62c03bd190>), ('loss_bbox_0_unscaled', <util.misc.SmoothedValue object at 0x7f62c03bd0d0>), ('loss_giou_0_unscaled', <util.misc.SmoothedValue object at 0x7f62c03bd430>), ('cardinality_error_0_unscaled', <util.misc.SmoothedValue object at 0x7f62c03bd340>), ('loss_ce_1_unscaled', <util.misc.SmoothedValue object at 0x7f62c03bd6a0>), ('loss_bbox_1_unscaled', <util.misc.SmoothedValue object at 0x7f62c03bd5e0>), ('loss_giou_1_unscaled', <util.misc.SmoothedValue object at 0x7f62c03bd940>), ('cardinality_error_1_unscaled', <util.misc.SmoothedValue object at 0x7f62c03bd850>), ('loss_ce_2_unscaled', <util.misc.SmoothedValue object at 0x7f62c03bda90>), ('loss_bbox_2_unscaled', <util.misc.SmoothedValue object at 0x7f62c03bdaf0>), ('loss_giou_2_unscaled', <util.misc.SmoothedValue object at 0x7f62c03bddf0>), ('cardinality_error_2_unscaled', <util.misc.SmoothedValue object at 0x7f62c03bdd00>), ('loss_ce_3_unscaled', <util.misc.SmoothedValue object at 0x7f62c03c10a0>), ('loss_bbox_3_unscaled', <util.misc.SmoothedValue object at 0x7f62c03c1070>), ('loss_giou_3_unscaled', <util.misc.SmoothedValue object at 0x7f62c03c1340>), ('cardinality_error_3_unscaled', <util.misc.SmoothedValue object at 0x7f62c03c1250>), ('loss_ce_4_unscaled', <util.misc.SmoothedValue object at 0x7f62c03c15b0>), ('loss_bbox_4_unscaled', <util.misc.SmoothedValue object at 0x7f62c03c14f0>), ('loss_giou_4_unscaled', <util.misc.SmoothedValue object at 0x7f62c03c16d0>), ('cardinality_error_4_unscaled', <util.misc.SmoothedValue object at 0x7f62c03c1670>)])
+*** IndentationError: expected an indented block
+*** AttributeError: 'MetricLogger' object has no attribute 'items'
+*** AttributeError: 'MetricLogger' object has no attribute 'items'
+*** AttributeError: 'collections.defaultdict' object has no attribute 'item'
+lr 0.000100
+class_error 100.00
+loss 73.0515 (73.0515)
+loss_ce 4.5679 (4.5679)
+loss_bbox 5.3465 (5.3465)
+loss_giou 2.1626 (2.1626)
+loss_ce_0 4.6168 (4.6168)
+loss_bbox_0 5.1822 (5.1822)
+loss_giou_0 2.2252 (2.2252)
+loss_ce_1 4.6735 (4.6735)
+loss_bbox_1 5.2828 (5.2828)
+loss_giou_1 2.2011 (2.2011)
+loss_ce_2 4.7306 (4.7306)
+loss_bbox_2 5.2595 (5.2595)
+loss_giou_2 2.1953 (2.1953)
+loss_ce_3 4.8561 (4.8561)
+loss_bbox_3 5.3054 (5.3054)
+loss_giou_3 2.1636 (2.1636)
+loss_ce_4 4.8219 (4.8219)
+loss_bbox_4 5.3040 (5.3040)
+loss_giou_4 2.1565 (2.1565)
+loss_ce_unscaled 4.5679 (4.5679)
+class_error_unscaled 100.0000 (100.0000)
+loss_bbox_unscaled 1.0693 (1.0693)
+loss_giou_unscaled 1.0813 (1.0813)
+cardinality_error_unscaled 95.7500 (95.7500)
+loss_ce_0_unscaled 4.6168 (4.6168)
+loss_bbox_0_unscaled 1.0364 (1.0364)
+loss_giou_0_unscaled 1.1126 (1.1126)
+cardinality_error_0_unscaled 95.7500 (95.7500)
+loss_ce_1_unscaled 4.6735 (4.6735)
+loss_bbox_1_unscaled 1.0566 (1.0566)
+loss_giou_1_unscaled 1.1005 (1.1005)
+cardinality_error_1_unscaled 95.7500 (95.7500)
+loss_ce_2_unscaled 4.7306 (4.7306)
+loss_bbox_2_unscaled 1.0519 (1.0519)
+loss_giou_2_unscaled 1.0977 (1.0977)
+cardinality_error_2_unscaled 95.7500 (95.7500)
+loss_ce_3_unscaled 4.8561 (4.8561)
+loss_bbox_3_unscaled 1.0611 (1.0611)
+loss_giou_3_unscaled 1.0818 (1.0818)
+cardinality_error_3_unscaled 95.7500 (95.7500)
+loss_ce_4_unscaled 4.8219 (4.8219)
+loss_bbox_4_unscaled 1.0608 (1.0608)
+loss_giou_4_unscaled 1.0783 (1.0783)
+cardinality_error_4_unscaled 95.7500 (95.7500)
+i: lr j:  0.000100
+i: class_error j:  100.00
+i: loss j:  73.0515 (73.0515)
+i: loss_ce j:  4.5679 (4.5679)
+i: loss_bbox j:  5.3465 (5.3465)
+i: loss_giou j:  2.1626 (2.1626)
+i: loss_ce_0 j:  4.6168 (4.6168)
+i: loss_bbox_0 j:  5.1822 (5.1822)
+i: loss_giou_0 j:  2.2252 (2.2252)
+i: loss_ce_1 j:  4.6735 (4.6735)
+i: loss_bbox_1 j:  5.2828 (5.2828)
+i: loss_giou_1 j:  2.2011 (2.2011)
+i: loss_ce_2 j:  4.7306 (4.7306)
+i: loss_bbox_2 j:  5.2595 (5.2595)
+i: loss_giou_2 j:  2.1953 (2.1953)
+i: loss_ce_3 j:  4.8561 (4.8561)
+i: loss_bbox_3 j:  5.3054 (5.3054)
+i: loss_giou_3 j:  2.1636 (2.1636)
+i: loss_ce_4 j:  4.8219 (4.8219)
+i: loss_bbox_4 j:  5.3040 (5.3040)
+i: loss_giou_4 j:  2.1565 (2.1565)
+i: loss_ce_unscaled j:  4.5679 (4.5679)
+i: class_error_unscaled j:  100.0000 (100.0000)
+i: loss_bbox_unscaled j:  1.0693 (1.0693)
+i: loss_giou_unscaled j:  1.0813 (1.0813)
+i: cardinality_error_unscaled j:  95.7500 (95.7500)
+i: loss_ce_0_unscaled j:  4.6168 (4.6168)
+i: loss_bbox_0_unscaled j:  1.0364 (1.0364)
+i: loss_giou_0_unscaled j:  1.1126 (1.1126)
+i: cardinality_error_0_unscaled j:  95.7500 (95.7500)
+i: loss_ce_1_unscaled j:  4.6735 (4.6735)
+i: loss_bbox_1_unscaled j:  1.0566 (1.0566)
+i: loss_giou_1_unscaled j:  1.1005 (1.1005)
+i: cardinality_error_1_unscaled j:  95.7500 (95.7500)
+i: loss_ce_2_unscaled j:  4.7306 (4.7306)
+i: loss_bbox_2_unscaled j:  1.0519 (1.0519)
+i: loss_giou_2_unscaled j:  1.0977 (1.0977)
+i: cardinality_error_2_unscaled j:  95.7500 (95.7500)
+i: loss_ce_3_unscaled j:  4.8561 (4.8561)
+i: loss_bbox_3_unscaled j:  1.0611 (1.0611)
+i: loss_giou_3_unscaled j:  1.0818 (1.0818)
+i: cardinality_error_3_unscaled j:  95.7500 (95.7500)
+i: loss_ce_4_unscaled j:  4.8219 (4.8219)
+i: loss_bbox_4_unscaled j:  1.0608 (1.0608)
+i: loss_giou_4_unscaled j:  1.0783 (1.0783)
+i: cardinality_error_4_unscaled j:  95.7500 (95.7500)
+*** SyntaxError: invalid syntax
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+<class 'util.misc.SmoothedValue'>
+lr 0.0001
+class_error 100.0
+loss 73.05149841308594
+loss_ce 4.567876815795898
+loss_bbox 5.346506118774414
+loss_giou 2.162555456161499
+loss_ce_0 4.616812705993652
+loss_bbox_0 5.182182312011719
+loss_giou_0 2.225154161453247
+loss_ce_1 4.673548698425293
+loss_bbox_1 5.282788276672363
+loss_giou_1 2.2010626792907715
+loss_ce_2 4.730642795562744
+loss_bbox_2 5.259518146514893
+loss_giou_2 2.1953155994415283
+loss_ce_3 4.8560662269592285
+loss_bbox_3 5.305447578430176
+loss_giou_3 2.1635708808898926
+loss_ce_4 4.821895599365234
+loss_bbox_4 5.304011344909668
+loss_giou_4 2.156548500061035
+loss_ce_unscaled 4.567876815795898
+class_error_unscaled 100.0
+loss_bbox_unscaled 1.0693012475967407
+loss_giou_unscaled 1.0812777280807495
+cardinality_error_unscaled 95.75
+loss_ce_0_unscaled 4.616812705993652
+loss_bbox_0_unscaled 1.0364364385604858
+loss_giou_0_unscaled 1.1125770807266235
+cardinality_error_0_unscaled 95.75
+loss_ce_1_unscaled 4.673548698425293
+loss_bbox_1_unscaled 1.0565576553344727
+loss_giou_1_unscaled 1.1005313396453857
+cardinality_error_1_unscaled 95.75
+loss_ce_2_unscaled 4.730642795562744
+loss_bbox_2_unscaled 1.0519036054611206
+loss_giou_2_unscaled 1.0976577997207642
+cardinality_error_2_unscaled 95.75
+loss_ce_3_unscaled 4.8560662269592285
+loss_bbox_3_unscaled 1.0610895156860352
+loss_giou_3_unscaled 1.0817854404449463
+cardinality_error_3_unscaled 95.75
+loss_ce_4_unscaled 4.821895599365234
+loss_bbox_4_unscaled 1.0608022212982178
+loss_giou_4_unscaled 1.0782742500305176
+cardinality_error_4_unscaled 95.75
+Traceback (most recent call last):
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/main.py", line 263, in <module>
+    main(args)
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/main.py", line 211, in main
+    train_stats = train_one_epoch(
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py", line 32, in train_one_epoch
+    for samples, targets in metric_logger.log_every(data_loader, print_freq, header):
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py", line 233, in log_every
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py", line 233, in log_every
+  File "/home/kwangrok/anaconda3/envs/mm_torch113/lib/python3.9/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/kwangrok/anaconda3/envs/mm_torch113/lib/python3.9/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

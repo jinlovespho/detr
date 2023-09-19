@@ -1,0 +1,1318 @@
+2023-09-19 14:46:46,562 INFO    StreamThr :44445 [internal.py:wandb_internal():86] W&B internal server running at pid: 44445, started at: 2023-09-19 14:46:46.561757
+2023-09-19 14:46:46,564 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status
+2023-09-19 14:46:46,570 INFO    WriterThread:44445 [datastore.py:open_for_write():85] open: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/run-f2h2cqq4.wandb
+2023-09-19 14:46:46,570 DEBUG   SenderThread:44445 [sender.py:send():379] send: header
+2023-09-19 14:46:46,672 DEBUG   SenderThread:44445 [sender.py:send():379] send: run
+2023-09-19 14:46:47,534 INFO    SenderThread:44445 [dir_watcher.py:__init__():211] watching files in: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files
+2023-09-19 14:46:47,534 INFO    SenderThread:44445 [sender.py:_start_run_threads():1121] run started: f2h2cqq4 with start time 1695102406.564487
+2023-09-19 14:46:47,534 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:46:47,535 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:46:47,559 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: check_version
+2023-09-19 14:46:47,560 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: check_version
+2023-09-19 14:46:47,729 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: run_start
+2023-09-19 14:46:47,733 DEBUG   HandlerThread:44445 [system_info.py:__init__():31] System info init
+2023-09-19 14:46:47,733 DEBUG   HandlerThread:44445 [system_info.py:__init__():46] System info init done
+2023-09-19 14:46:47,733 INFO    HandlerThread:44445 [system_monitor.py:start():181] Starting system monitor
+2023-09-19 14:46:47,733 INFO    SystemMonitor:44445 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-19 14:46:47,733 INFO    SystemMonitor:44445 [interfaces.py:start():190] Started cpu monitoring
+2023-09-19 14:46:47,734 INFO    SystemMonitor:44445 [interfaces.py:start():190] Started disk monitoring
+2023-09-19 14:46:47,734 INFO    HandlerThread:44445 [system_monitor.py:probe():201] Collecting system info
+2023-09-19 14:46:47,734 INFO    SystemMonitor:44445 [interfaces.py:start():190] Started gpu monitoring
+2023-09-19 14:46:47,735 INFO    SystemMonitor:44445 [interfaces.py:start():190] Started memory monitoring
+2023-09-19 14:46:47,735 INFO    SystemMonitor:44445 [interfaces.py:start():190] Started network monitoring
+2023-09-19 14:46:47,763 DEBUG   HandlerThread:44445 [system_info.py:probe():195] Probing system
+2023-09-19 14:46:47,767 DEBUG   HandlerThread:44445 [system_info.py:_probe_git():180] Probing git
+2023-09-19 14:46:47,773 DEBUG   HandlerThread:44445 [system_info.py:_probe_git():188] Probing git done
+2023-09-19 14:46:47,774 DEBUG   HandlerThread:44445 [system_info.py:probe():240] Probing system done
+2023-09-19 14:46:47,774 DEBUG   HandlerThread:44445 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-83-generic-x86_64-with-glibc2.31', 'python': '3.9.17', 'heartbeatAt': '2023-09-19T05:46:47.763614', 'startedAt': '2023-09-19T05:46:46.556559', 'docker': None, 'cuda': None, 'args': ('--batch_size', '4', '--epochs', '300', '--enc_layers', '6', '--dec_layers', '6', '--hidden_dim', '256', '--num_queries', '100', '--coco_path', '/mnt/ssd2/dataset/coco/', '--output_dir', './train_results/20230919/LOCAL_size1k_batch4_epoch300_enc6_dec6_hdim256_query100'), 'state': 'running', 'program': '/home/kwangrok/Downloads/VS_CODE/my_github/detr/main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/jinlovespho/detr.git', 'commit': '3af9fa878e73b6894ce3596450a8d9b89d918ca9'}, 'email': 'msjchr922@gmail.com', 'root': '/home/kwangrok/Downloads/VS_CODE/my_github/detr', 'host': 'jinlovespho', 'username': 'kwangrok', 'executable': '/home/kwangrok/anaconda3/envs/mm_torch113/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2.8006249999999993, 'min': 800.0, 'max': 4800.0}, 'cpu_freq_per_core': [{'current': 2.9, 'min': 800.0, 'max': 4800.0}, {'current': 2.9, 'min': 800.0, 'max': 4800.0}, {'current': 2.9, 'min': 800.0, 'max': 4800.0}, {'current': 2.9, 'min': 800.0, 'max': 4800.0}, {'current': 2.9, 'min': 800.0, 'max': 4800.0}, {'current': 2.9, 'min': 800.0, 'max': 4800.0}, {'current': 2.9, 'min': 800.0, 'max': 4800.0}, {'current': 2.9, 'min': 800.0, 'max': 4800.0}, {'current': 2.9, 'min': 800.0, 'max': 4800.0}, {'current': 2.9, 'min': 800.0, 'max': 4800.0}, {'current': 2.9, 'min': 800.0, 'max': 4800.0}, {'current': 2.9, 'min': 800.0, 'max': 4800.0}, {'current': 2.9, 'min': 800.0, 'max': 4800.0}, {'current': 2.9, 'min': 800.0, 'max': 4800.0}, {'current': 2.9, 'min': 800.0, 'max': 4800.0}, {'current': 0.851, 'min': 800.0, 'max': 4800.0}], 'disk': {'total': 456.8854446411133, 'used': 399.3604507446289}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 31.256961822509766}}
+2023-09-19 14:46:47,774 INFO    HandlerThread:44445 [system_monitor.py:probe():211] Finished collecting system info
+2023-09-19 14:46:47,774 INFO    HandlerThread:44445 [system_monitor.py:probe():214] Publishing system info
+2023-09-19 14:46:47,774 DEBUG   HandlerThread:44445 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-09-19 14:46:47,774 DEBUG   HandlerThread:44445 [system_info.py:_save_pip():67] Saving pip packages done
+2023-09-19 14:46:47,774 DEBUG   HandlerThread:44445 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-09-19 14:46:48,540 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_created():271] file/dir created: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:46:48,541 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_created():271] file/dir created: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/conda-environment.yaml
+2023-09-19 14:46:48,542 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_created():271] file/dir created: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/requirements.txt
+2023-09-19 14:46:51,536 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/conda-environment.yaml
+2023-09-19 14:46:51,595 DEBUG   HandlerThread:44445 [system_info.py:_save_conda():86] Saving conda packages done
+2023-09-19 14:46:51,596 INFO    HandlerThread:44445 [system_monitor.py:probe():216] Finished publishing system info
+2023-09-19 14:46:51,597 DEBUG   SenderThread:44445 [sender.py:send():379] send: files
+2023-09-19 14:46:51,597 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2023-09-19 14:46:51,597 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:46:51,602 DEBUG   SenderThread:44445 [sender.py:send():379] send: telemetry
+2023-09-19 14:46:51,602 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:46:51,603 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:46:51,931 DEBUG   SenderThread:44445 [sender.py:send():379] send: config
+2023-09-19 14:46:52,536 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_created():271] file/dir created: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-metadata.json
+2023-09-19 14:46:52,536 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_created():271] file/dir created: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:46:52,899 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:46:52,902 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:46:52,902 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:46:52,903 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:46:53,017 INFO    wandb-upload_0:44445 [upload_job.py:push():131] Uploaded file /tmp/tmpvd6kr2k1wandb/s9v8zeb2-wandb-metadata.json
+2023-09-19 14:46:53,536 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:46:54,536 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:46:54,897 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:46:54,898 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:46:54,898 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:46:54,899 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:46:55,537 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:46:56,537 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:46:56,900 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:46:57,092 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:46:57,093 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:46:57,094 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:46:57,094 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:46:57,537 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:46:58,537 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:46:59,281 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:46:59,282 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:46:59,283 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:46:59,283 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:46:59,538 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:00,538 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:01,705 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:01,705 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:01,706 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:01,706 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:02,539 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:02,707 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:47:03,821 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:03,822 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:03,822 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:03,823 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:04,539 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:04,539 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:05,950 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:05,951 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:05,951 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:05,953 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:06,539 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:06,540 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:06,601 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:47:06,602 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:47:07,980 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:47:08,255 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:08,256 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:08,256 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:08,257 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:08,540 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:08,540 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:10,211 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:10,213 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:10,213 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:10,213 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:10,541 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:10,541 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:12,541 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:12,630 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:12,631 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:12,631 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:12,632 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:13,541 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:13,632 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:47:14,542 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:14,870 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:14,871 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:14,871 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:14,872 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:15,542 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:16,542 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:17,356 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:17,358 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:17,358 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:17,359 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:17,543 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:18,543 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:19,362 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:47:19,707 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:19,760 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:19,760 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:19,761 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:20,543 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:20,544 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/config.yaml
+2023-09-19 14:47:21,601 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:47:21,601 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:47:21,905 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:21,906 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:21,906 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:21,907 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:22,544 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:24,288 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:24,289 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:24,290 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:24,290 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:24,545 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:24,545 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:25,291 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:47:26,545 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:26,687 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:26,688 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:26,688 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:26,689 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:27,545 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:28,546 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:29,170 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:29,171 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:29,172 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:29,173 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:29,546 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:30,546 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:31,174 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:47:31,700 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:31,701 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:31,701 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:31,703 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:32,546 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:34,252 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:34,253 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:34,253 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:34,254 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:34,547 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:34,547 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:36,254 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:47:36,547 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:36,588 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:36,589 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:36,589 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:36,590 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:36,601 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:47:36,602 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:47:37,548 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:38,548 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:38,643 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:38,644 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:38,644 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:38,645 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:39,548 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:40,548 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:40,835 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:40,836 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:40,836 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:40,837 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:41,549 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:41,837 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:47:42,549 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:42,992 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:42,993 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:42,994 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:42,994 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:43,549 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:44,550 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:45,074 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:45,075 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:45,075 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:45,075 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:45,550 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:46,550 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:47,076 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:47:47,422 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:47,423 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:47,423 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:47,423 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:47,550 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:47,736 DEBUG   SystemMonitor:44445 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-19 14:47:47,736 DEBUG   SenderThread:44445 [sender.py:send():379] send: stats
+2023-09-19 14:47:48,551 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:49,921 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:49,922 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:49,923 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:49,923 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:50,551 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:51,601 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:47:51,601 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:47:52,552 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:52,678 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:52,689 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:52,689 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:52,690 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:47:52,690 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:53,552 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:54,552 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:54,794 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:54,795 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:54,795 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:54,795 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:55,553 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:56,553 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:56,813 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:56,814 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:56,814 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:56,815 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:57,553 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:47:57,816 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:47:58,553 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:47:59,120 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:47:59,121 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:47:59,122 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:47:59,122 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:47:59,554 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:00,554 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:01,496 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:01,497 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:01,497 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:01,498 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:01,554 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:02,555 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:03,498 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:48:03,812 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:03,814 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:03,814 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:03,814 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:04,555 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:06,093 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:06,094 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:06,094 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:06,095 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:06,555 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:06,556 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:06,601 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:48:06,601 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:48:08,252 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:08,253 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:08,253 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:08,253 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:08,556 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:08,556 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:09,254 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:48:10,539 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:10,540 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:10,540 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:10,541 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:10,557 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:10,557 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:12,557 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:12,712 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:12,722 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:12,722 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:12,723 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:13,557 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:14,558 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:14,723 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:48:15,072 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:15,073 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:15,073 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:15,074 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:15,558 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:16,558 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:17,184 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:17,185 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:17,185 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:17,186 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:17,558 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:17,737 DEBUG   SenderThread:44445 [sender.py:send():379] send: stats
+2023-09-19 14:48:18,559 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:19,418 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:19,419 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:19,419 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:19,420 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:19,559 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:20,420 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:48:20,559 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:21,601 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:48:21,602 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:48:21,896 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:21,897 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:21,897 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:21,898 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:22,560 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:24,303 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:24,304 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:24,304 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:24,305 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:24,560 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:24,561 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:26,306 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:48:26,561 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:26,767 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:26,768 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:26,768 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:26,769 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:27,561 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:28,561 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:29,037 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:29,038 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:29,039 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:29,040 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:29,561 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:30,562 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:31,365 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:31,366 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:31,367 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:31,367 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:48:31,367 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:31,562 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:32,562 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:33,706 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:33,707 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:33,708 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:33,708 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:34,563 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:34,563 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:36,179 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:36,180 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:36,180 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:36,180 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:36,563 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:36,601 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:48:36,602 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:48:36,817 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:48:38,454 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:38,455 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:38,455 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:38,455 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:38,564 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:38,564 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:40,564 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:40,792 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:40,793 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:40,794 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:40,794 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:41,564 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:42,565 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:42,795 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:48:43,422 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:43,423 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:43,423 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:43,423 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:43,565 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:44,565 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:45,910 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:45,911 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:45,911 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:45,912 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:46,566 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:47,737 DEBUG   SenderThread:44445 [sender.py:send():379] send: stats
+2023-09-19 14:48:48,384 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:48,385 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:48,385 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:48,385 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:48:48,385 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:48,566 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:48,566 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:50,567 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:50,762 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:50,763 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:50,763 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:50,764 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:51,567 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:51,601 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:48:51,602 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:48:52,567 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:53,229 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:53,239 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:53,240 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:53,240 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:53,567 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:54,240 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:48:54,568 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:55,650 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:55,651 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:55,651 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:55,652 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:56,568 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:56,568 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:57,836 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:48:57,837 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:48:57,838 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:48:57,838 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:48:58,569 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:48:58,569 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:48:59,839 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:49:00,116 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:00,117 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:00,117 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:00,118 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:00,569 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:02,570 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:02,629 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:02,630 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:02,630 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:02,631 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:03,570 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:04,570 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:04,851 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:04,852 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:04,852 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:04,853 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:49:04,853 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:05,571 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:06,571 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:06,602 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:49:06,602 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:49:06,991 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:06,992 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:06,993 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:06,993 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:07,571 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:08,571 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:09,033 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:09,035 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:09,035 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:09,036 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:09,572 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:10,037 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:49:10,572 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:11,141 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:11,142 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:11,143 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:11,143 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:11,572 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:12,572 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:13,700 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:13,711 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:13,711 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:13,712 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:14,573 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:14,573 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:15,712 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:49:16,145 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:16,146 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:16,146 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:16,147 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:16,573 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:17,738 DEBUG   SenderThread:44445 [sender.py:send():379] send: stats
+2023-09-19 14:49:18,315 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:18,316 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:18,317 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:18,317 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:18,574 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:18,574 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:20,360 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:20,361 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:20,361 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:20,362 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:20,574 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:20,575 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:21,362 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:49:21,602 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:49:21,602 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:49:22,422 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:22,423 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:22,423 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:22,423 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:22,575 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:22,575 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:24,831 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:24,832 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:24,832 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:24,833 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:25,576 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:26,576 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:26,833 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:49:27,393 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:27,394 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:27,394 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:27,394 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:27,576 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:28,577 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:29,613 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:29,614 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:29,615 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:29,615 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:30,577 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:30,577 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:31,845 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:31,846 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:31,846 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:31,846 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:49:31,847 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:32,577 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:32,578 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:34,045 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:34,046 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:34,046 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:34,046 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:34,578 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:34,578 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:36,369 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:36,370 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:36,370 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:36,371 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:36,578 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:36,578 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:36,602 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:49:36,602 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:49:37,824 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:49:38,838 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:38,839 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:38,839 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:38,839 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:39,579 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:40,579 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:41,392 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:41,393 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:41,393 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:41,394 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:41,579 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:42,580 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:43,395 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:49:43,469 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:43,470 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:43,470 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:43,471 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:43,580 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:44,580 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:45,592 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:45,593 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:45,594 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:45,594 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:46,581 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:46,581 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:47,738 DEBUG   SenderThread:44445 [sender.py:send():379] send: stats
+2023-09-19 14:49:47,940 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:47,940 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:47,941 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:47,941 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:48,581 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:48,581 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:48,942 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:49:50,225 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:50,226 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:50,226 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:50,227 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:50,582 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:50,582 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:51,602 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:49:51,602 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:49:52,397 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:52,407 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:52,407 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:52,408 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:52,591 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:52,591 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:54,408 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:49:54,814 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:54,815 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:54,815 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:54,816 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:55,591 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:56,732 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:56,733 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:56,733 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:56,734 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:57,592 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:57,592 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:58,771 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:49:58,772 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:49:58,772 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:49:58,773 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:49:59,592 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:49:59,592 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:49:59,773 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:50:00,967 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:00,968 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:00,968 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:00,969 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:01,593 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:01,593 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:03,236 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:03,237 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:03,237 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:03,237 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:03,595 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:03,595 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:05,238 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:50:05,421 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:05,422 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:05,422 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:05,423 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:05,596 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:05,596 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:06,602 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:50:06,602 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:50:07,596 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:07,697 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:07,698 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:07,698 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:07,699 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:08,596 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:09,596 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:09,874 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:09,875 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:09,875 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:09,876 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:10,597 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:10,876 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:50:11,597 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:12,109 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:12,120 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:12,120 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:12,121 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:12,597 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:14,399 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:14,400 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:14,401 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:14,401 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:14,598 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:16,402 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:50:16,635 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:16,636 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:16,636 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:16,637 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:17,598 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:17,599 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:17,738 DEBUG   SenderThread:44445 [sender.py:send():379] send: stats
+2023-09-19 14:50:18,956 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:18,957 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:18,957 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:18,957 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:19,599 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:19,599 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:21,259 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:21,260 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:21,261 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:21,261 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:21,599 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:21,600 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:21,602 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:50:21,603 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:50:21,919 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:50:23,505 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:23,506 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:23,506 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:23,507 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:23,600 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:23,600 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:25,600 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:25,603 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:25,604 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:25,605 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:25,605 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:26,600 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:27,601 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:27,606 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:50:27,763 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:27,764 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:27,764 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:27,765 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:28,601 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:29,601 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:30,321 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:30,322 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:30,322 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:30,322 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:30,602 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:33,326 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:50:33,602 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:34,474 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:34,475 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:34,475 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:34,476 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:34,603 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:36,603 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:50:36,605 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:50:37,612 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:38,350 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:38,351 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:38,351 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:38,352 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:50:38,352 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:38,612 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:41,613 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:42,078 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:42,079 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:42,079 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:42,080 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:42,614 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:43,614 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:44,081 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:50:44,424 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:44,425 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:44,425 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:44,425 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:44,614 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:45,614 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:46,550 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:46,552 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:46,552 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:46,552 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:46,615 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:47,615 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:47,739 DEBUG   SenderThread:44445 [sender.py:send():379] send: stats
+2023-09-19 14:50:48,974 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:48,975 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:48,975 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:48,976 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:49,615 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:49,976 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:50:51,130 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:51,131 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:51,131 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:51,132 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:51,602 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:50:51,602 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:50:51,616 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:51,616 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:53,555 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:53,556 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:53,556 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:53,557 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:53,616 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:53,617 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:55,558 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:50:55,617 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:55,764 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:55,765 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:55,765 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:55,765 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:56,617 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:57,617 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:50:58,214 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:50:58,215 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:50:58,215 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:50:58,216 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:50:58,618 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:50:59,618 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:00,589 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:00,590 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:00,591 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:00,591 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:51:00,591 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:00,618 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:01,618 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:02,951 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:02,952 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:02,952 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:02,954 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:03,619 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:05,245 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:05,246 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:05,246 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:05,247 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:05,620 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:05,620 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:06,247 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:51:06,602 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:51:06,603 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:51:07,535 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:07,536 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:07,537 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:07,537 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:07,620 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:07,620 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:09,621 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:09,966 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:09,967 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:09,967 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:09,967 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:10,621 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:11,621 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:11,968 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:51:12,628 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:12,629 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:12,629 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:12,630 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:13,622 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:13,622 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:14,828 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:14,829 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:14,830 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:14,831 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:15,622 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:15,622 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:17,055 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:17,066 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:17,066 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:17,066 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:51:17,067 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:17,623 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:17,739 DEBUG   SenderThread:44445 [sender.py:send():379] send: stats
+2023-09-19 14:51:19,389 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:19,390 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:19,390 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:19,391 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:19,623 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:19,623 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:21,602 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:51:21,603 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:51:21,623 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:21,848 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:21,868 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:21,868 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:21,869 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:22,624 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:22,869 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:51:23,624 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:24,160 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:24,161 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:24,161 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:24,162 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:24,624 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:25,625 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:26,132 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:26,133 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:26,133 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:26,134 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:26,625 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:27,625 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:28,134 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:51:28,242 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:28,243 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:28,243 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:28,244 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:28,625 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:29,625 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:30,674 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:30,675 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:30,676 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:30,676 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:31,626 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:31,626 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:32,766 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:32,767 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:32,767 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:32,767 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:33,627 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:33,627 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:33,768 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:51:35,063 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:35,064 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:35,064 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:35,065 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:35,627 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:36,603 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:51:36,603 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:51:37,220 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:37,231 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:37,231 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:37,232 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:37,627 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:37,628 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:39,233 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:51:39,432 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:39,433 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:39,433 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:39,433 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:39,628 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:39,628 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:41,628 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:41,654 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:41,655 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:41,655 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:41,656 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:42,629 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:43,629 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:43,638 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:43,639 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:43,640 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:43,640 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:44,630 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:44,731 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:51:45,630 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:47,742 DEBUG   SenderThread:44445 [sender.py:send():379] send: stats
+2023-09-19 14:51:49,743 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:51:51,603 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:51:51,604 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:51:54,857 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:51:57,635 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:51:58,569 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:51:58,570 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:51:58,570 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:51:58,570 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:51:58,636 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:51:59,636 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:00,332 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:00,333 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:00,333 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:00,333 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:52:00,334 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:00,636 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:01,636 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:01,916 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:01,917 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:01,917 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:01,917 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:02,637 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:03,637 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:03,638 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:03,639 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:03,639 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:03,640 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:04,637 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:05,370 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:05,371 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:05,371 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:05,373 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:05,373 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:52:05,637 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:05,638 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:06,603 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:52:06,603 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:52:07,016 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:07,017 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:07,018 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:07,018 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:07,638 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:07,638 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:08,753 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:08,754 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:08,754 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:08,755 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:09,639 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:09,639 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:10,505 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:10,506 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:10,506 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:10,506 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:52:10,507 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:10,639 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:11,639 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:12,225 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:12,226 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:12,226 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:12,226 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:12,639 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:13,640 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:13,982 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:13,983 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:13,983 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:13,984 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:14,640 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:15,640 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:15,921 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:15,922 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:15,922 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:15,923 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:52:15,923 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:16,641 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:17,465 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:17,466 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:17,466 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:17,467 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:17,641 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:17,641 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:17,742 DEBUG   SenderThread:44445 [sender.py:send():379] send: stats
+2023-09-19 14:52:19,198 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:19,199 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:19,199 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:19,200 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:19,641 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:19,642 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:20,942 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:20,943 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:20,944 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:20,944 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:52:20,944 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:21,603 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:52:21,604 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:52:21,642 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:21,642 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:22,707 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:22,708 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:22,708 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:22,709 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:23,643 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:23,643 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:24,328 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:24,329 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:24,329 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:24,329 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:24,643 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:25,643 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:26,063 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:26,064 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:26,064 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:26,065 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:52:26,065 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:26,643 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:27,644 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:27,810 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:27,811 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:27,811 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:27,812 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:28,644 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:29,622 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:29,623 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:29,623 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:29,624 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:29,644 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:29,645 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:31,193 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:31,194 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:31,194 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:31,195 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:52:31,195 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:31,645 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:31,645 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:33,003 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:33,004 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:33,004 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:33,005 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:33,646 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:33,646 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:34,713 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:34,714 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:34,714 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:34,715 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:35,646 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:35,646 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:36,563 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:36,564 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:36,564 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:36,565 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:52:36,566 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:36,603 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:52:36,603 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:52:36,646 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:37,647 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:38,160 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:38,161 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:38,161 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:38,162 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:38,647 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:39,647 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:39,746 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:39,746 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:39,747 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:39,747 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:40,648 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:41,126 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:52:41,127 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:52:41,127 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:52:41,128 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:52:41,652 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:52:41,652 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:42,249 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:52:43,653 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:47,250 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:52:47,742 DEBUG   SenderThread:44445 [sender.py:send():379] send: stats
+2023-09-19 14:52:51,604 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:52:51,606 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:52:52,905 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:52:53,658 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:55,659 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:52:58,688 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:53:03,663 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:53:04,506 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:53:05,664 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:53:06,604 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:53:06,606 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:53:09,666 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:53:10,380 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:53:15,382 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:53:17,745 DEBUG   SenderThread:44445 [sender.py:send():379] send: stats
+2023-09-19 14:53:20,746 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:53:21,604 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:53:21,605 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:53:25,908 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:53:30,909 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:53:35,910 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:53:36,604 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:53:36,606 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:53:41,883 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:53:46,884 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:53:47,751 DEBUG   SenderThread:44445 [sender.py:send():379] send: stats
+2023-09-19 14:53:51,605 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:53:51,606 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:53:51,915 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:53:56,915 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:54:01,916 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:54:06,605 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:54:06,606 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:54:06,935 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:54:11,936 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:54:16,937 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:54:17,748 DEBUG   SenderThread:44445 [sender.py:send():379] send: stats
+2023-09-19 14:54:21,605 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:54:21,607 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:54:22,852 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:54:27,853 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:54:32,854 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:54:36,605 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:54:36,607 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:54:37,886 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:54:42,887 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:54:43,713 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:54:45,714 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:54:46,751 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-19 14:54:46,756 DEBUG   SenderThread:44445 [sender.py:send():379] send: history
+2023-09-19 14:54:46,757 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: summary_record
+2023-09-19 14:54:46,758 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:54:47,716 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:54:47,716 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:54:47,750 DEBUG   SenderThread:44445 [sender.py:send():379] send: stats
+2023-09-19 14:54:48,751 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:54:49,716 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:54:51,605 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:54:51,607 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:54:51,718 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:54:53,719 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:54:54,072 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:54:55,720 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:54:59,664 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:54:59,722 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:55:04,665 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:55:06,605 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:55:06,607 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:55:09,895 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:55:14,896 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:55:17,752 DEBUG   SenderThread:44445 [sender.py:send():379] send: stats
+2023-09-19 14:55:20,754 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:55:21,605 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:55:21,605 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:55:25,891 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:55:30,892 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:55:35,893 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:55:36,606 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:55:36,607 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:55:40,919 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:55:41,744 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:55:46,296 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:55:47,752 DEBUG   SenderThread:44445 [sender.py:send():379] send: stats
+2023-09-19 14:55:51,606 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:55:51,607 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:55:51,905 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:55:56,906 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:56:01,907 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:56:06,605 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:56:06,606 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:56:06,945 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:56:11,947 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:56:16,947 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:56:17,759 DEBUG   SenderThread:44445 [sender.py:send():379] send: stats
+2023-09-19 14:56:21,606 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-19 14:56:21,608 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: stop_status
+2023-09-19 14:56:22,031 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:56:24,765 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:56:27,032 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:56:27,904 DEBUG   SenderThread:44445 [sender.py:send():379] send: exit
+2023-09-19 14:56:27,905 INFO    SenderThread:44445 [sender.py:send_exit():584] handling exit code: 1
+2023-09-19 14:56:27,905 INFO    SenderThread:44445 [sender.py:send_exit():586] handling runtime: 580
+2023-09-19 14:56:27,906 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:56:27,907 INFO    SenderThread:44445 [sender.py:send_exit():592] send defer
+2023-09-19 14:56:27,908 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: defer
+2023-09-19 14:56:27,909 INFO    HandlerThread:44445 [handler.py:handle_request_defer():170] handle defer: 0
+2023-09-19 14:56:27,910 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: defer
+2023-09-19 14:56:27,910 INFO    SenderThread:44445 [sender.py:send_request_defer():608] handle sender defer: 0
+2023-09-19 14:56:27,910 INFO    SenderThread:44445 [sender.py:transition_state():612] send defer: 1
+2023-09-19 14:56:27,911 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: defer
+2023-09-19 14:56:27,911 INFO    HandlerThread:44445 [handler.py:handle_request_defer():170] handle defer: 1
+2023-09-19 14:56:27,911 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: defer
+2023-09-19 14:56:27,912 INFO    SenderThread:44445 [sender.py:send_request_defer():608] handle sender defer: 1
+2023-09-19 14:56:27,912 INFO    SenderThread:44445 [sender.py:transition_state():612] send defer: 2
+2023-09-19 14:56:27,912 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: defer
+2023-09-19 14:56:27,912 INFO    HandlerThread:44445 [handler.py:handle_request_defer():170] handle defer: 2
+2023-09-19 14:56:27,912 INFO    HandlerThread:44445 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-19 14:56:27,914 DEBUG   SystemMonitor:44445 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-19 14:56:27,914 DEBUG   SystemMonitor:44445 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-19 14:56:27,916 INFO    HandlerThread:44445 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-19 14:56:27,917 INFO    HandlerThread:44445 [interfaces.py:finish():202] Joined disk monitor
+2023-09-19 14:56:27,966 INFO    HandlerThread:44445 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-19 14:56:27,966 INFO    HandlerThread:44445 [interfaces.py:finish():202] Joined memory monitor
+2023-09-19 14:56:27,966 INFO    HandlerThread:44445 [interfaces.py:finish():202] Joined network monitor
+2023-09-19 14:56:27,967 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: defer
+2023-09-19 14:56:27,967 INFO    SenderThread:44445 [sender.py:send_request_defer():608] handle sender defer: 2
+2023-09-19 14:56:27,967 INFO    SenderThread:44445 [sender.py:transition_state():612] send defer: 3
+2023-09-19 14:56:27,967 DEBUG   SenderThread:44445 [sender.py:send():379] send: stats
+2023-09-19 14:56:27,967 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: defer
+2023-09-19 14:56:27,967 INFO    HandlerThread:44445 [handler.py:handle_request_defer():170] handle defer: 3
+2023-09-19 14:56:27,967 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: defer
+2023-09-19 14:56:27,967 INFO    SenderThread:44445 [sender.py:send_request_defer():608] handle sender defer: 3
+2023-09-19 14:56:27,967 INFO    SenderThread:44445 [sender.py:transition_state():612] send defer: 4
+2023-09-19 14:56:27,967 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: defer
+2023-09-19 14:56:27,967 INFO    HandlerThread:44445 [handler.py:handle_request_defer():170] handle defer: 4
+2023-09-19 14:56:27,967 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: defer
+2023-09-19 14:56:27,968 INFO    SenderThread:44445 [sender.py:send_request_defer():608] handle sender defer: 4
+2023-09-19 14:56:27,968 INFO    SenderThread:44445 [sender.py:transition_state():612] send defer: 5
+2023-09-19 14:56:27,968 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: defer
+2023-09-19 14:56:27,968 INFO    HandlerThread:44445 [handler.py:handle_request_defer():170] handle defer: 5
+2023-09-19 14:56:27,968 DEBUG   SenderThread:44445 [sender.py:send():379] send: summary
+2023-09-19 14:56:27,968 INFO    SenderThread:44445 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-19 14:56:27,969 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: defer
+2023-09-19 14:56:27,969 INFO    SenderThread:44445 [sender.py:send_request_defer():608] handle sender defer: 5
+2023-09-19 14:56:27,969 INFO    SenderThread:44445 [sender.py:transition_state():612] send defer: 6
+2023-09-19 14:56:27,969 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: defer
+2023-09-19 14:56:27,969 INFO    HandlerThread:44445 [handler.py:handle_request_defer():170] handle defer: 6
+2023-09-19 14:56:27,969 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: defer
+2023-09-19 14:56:27,969 INFO    SenderThread:44445 [sender.py:send_request_defer():608] handle sender defer: 6
+2023-09-19 14:56:27,969 INFO    SenderThread:44445 [sender.py:transition_state():612] send defer: 7
+2023-09-19 14:56:27,969 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:56:27,969 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: defer
+2023-09-19 14:56:27,969 INFO    HandlerThread:44445 [handler.py:handle_request_defer():170] handle defer: 7
+2023-09-19 14:56:27,969 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: defer
+2023-09-19 14:56:27,969 INFO    SenderThread:44445 [sender.py:send_request_defer():608] handle sender defer: 7
+2023-09-19 14:56:28,768 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:56:28,902 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-19 14:56:29,913 INFO    SenderThread:44445 [sender.py:transition_state():612] send defer: 8
+2023-09-19 14:56:29,913 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: poll_exit
+2023-09-19 14:56:29,913 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: defer
+2023-09-19 14:56:29,913 INFO    HandlerThread:44445 [handler.py:handle_request_defer():170] handle defer: 8
+2023-09-19 14:56:29,914 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: defer
+2023-09-19 14:56:29,914 INFO    SenderThread:44445 [sender.py:send_request_defer():608] handle sender defer: 8
+2023-09-19 14:56:29,914 INFO    SenderThread:44445 [job_builder.py:build():281] Attempting to build job artifact
+2023-09-19 14:56:29,914 INFO    SenderThread:44445 [job_builder.py:_get_source_type():400] is repo sourced job
+2023-09-19 14:56:29,915 INFO    SenderThread:44445 [job_builder.py:build():374] adding wandb-job metadata file
+2023-09-19 14:56:29,925 INFO    SenderThread:44445 [sender.py:transition_state():612] send defer: 9
+2023-09-19 14:56:29,925 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: defer
+2023-09-19 14:56:29,925 INFO    HandlerThread:44445 [handler.py:handle_request_defer():170] handle defer: 9
+2023-09-19 14:56:29,926 DEBUG   SenderThread:44445 [sender.py:send():379] send: artifact
+2023-09-19 14:56:30,768 INFO    Thread-12 :44445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:56:31,227 INFO    wandb-upload_1:44445 [upload_job.py:push():86] Skipped uploading /home/kwangrok/.local/share/wandb/artifacts/staging/tmpzkkwkq7f
+2023-09-19 14:56:31,840 INFO    wandb-upload_0:44445 [upload_job.py:push():89] Uploaded file /home/kwangrok/.local/share/wandb/artifacts/staging/tmpkk49v26_
+2023-09-19 14:56:33,905 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-19 14:56:33,960 INFO    SenderThread:44445 [sender.py:send_artifact():1475] sent artifact job-https___github.com_jinlovespho_detr.git_main.py - {'id': 'QXJ0aWZhY3Q6NTc0Njc1MzA3', 'digest': '31764ee4204b4485617aaed61da31677', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjk4ODIyODEw', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTc0NjU3NzM5', 'versionIndex': 2}}, 'version': 'latest'}
+2023-09-19 14:56:33,960 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: defer
+2023-09-19 14:56:33,960 INFO    SenderThread:44445 [sender.py:send_request_defer():608] handle sender defer: 9
+2023-09-19 14:56:33,960 INFO    SenderThread:44445 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-09-19 14:56:33,960 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: status_report
+2023-09-19 14:56:34,770 INFO    SenderThread:44445 [dir_watcher.py:finish():388] scan: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files
+2023-09-19 14:56:34,771 INFO    SenderThread:44445 [dir_watcher.py:finish():402] scan save: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/conda-environment.yaml conda-environment.yaml
+2023-09-19 14:56:34,772 INFO    SenderThread:44445 [dir_watcher.py:finish():402] scan save: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/requirements.txt requirements.txt
+2023-09-19 14:56:34,778 INFO    SenderThread:44445 [dir_watcher.py:finish():402] scan save: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log output.log
+2023-09-19 14:56:34,779 INFO    SenderThread:44445 [dir_watcher.py:finish():402] scan save: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/config.yaml config.yaml
+2023-09-19 14:56:34,780 INFO    SenderThread:44445 [dir_watcher.py:finish():402] scan save: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json wandb-summary.json
+2023-09-19 14:56:34,781 INFO    SenderThread:44445 [dir_watcher.py:finish():402] scan save: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-metadata.json wandb-metadata.json
+2023-09-19 14:56:34,781 INFO    SenderThread:44445 [sender.py:transition_state():612] send defer: 10
+2023-09-19 14:56:34,781 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: defer
+2023-09-19 14:56:34,782 INFO    HandlerThread:44445 [handler.py:handle_request_defer():170] handle defer: 10
+2023-09-19 14:56:34,798 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: defer
+2023-09-19 14:56:34,798 INFO    SenderThread:44445 [sender.py:send_request_defer():608] handle sender defer: 10
+2023-09-19 14:56:34,798 INFO    SenderThread:44445 [file_pusher.py:finish():159] shutting down file pusher
+2023-09-19 14:56:35,303 INFO    wandb-upload_2:44445 [upload_job.py:push():131] Uploaded file /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/requirements.txt
+2023-09-19 14:56:35,505 INFO    wandb-upload_1:44445 [upload_job.py:push():131] Uploaded file /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/conda-environment.yaml
+2023-09-19 14:56:35,609 INFO    wandb-upload_4:44445 [upload_job.py:push():131] Uploaded file /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/config.yaml
+2023-09-19 14:56:35,641 INFO    wandb-upload_0:44445 [upload_job.py:push():131] Uploaded file /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/wandb-summary.json
+2023-09-19 14:56:35,987 INFO    wandb-upload_3:44445 [upload_job.py:push():131] Uploaded file /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/files/output.log
+2023-09-19 14:56:36,188 INFO    Thread-11 :44445 [sender.py:transition_state():612] send defer: 11
+2023-09-19 14:56:36,188 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: defer
+2023-09-19 14:56:36,188 INFO    HandlerThread:44445 [handler.py:handle_request_defer():170] handle defer: 11
+2023-09-19 14:56:36,189 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: defer
+2023-09-19 14:56:36,189 INFO    SenderThread:44445 [sender.py:send_request_defer():608] handle sender defer: 11
+2023-09-19 14:56:36,189 INFO    SenderThread:44445 [file_pusher.py:join():164] waiting for file pusher
+2023-09-19 14:56:36,189 INFO    SenderThread:44445 [sender.py:transition_state():612] send defer: 12
+2023-09-19 14:56:36,189 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: defer
+2023-09-19 14:56:36,189 INFO    HandlerThread:44445 [handler.py:handle_request_defer():170] handle defer: 12
+2023-09-19 14:56:36,189 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: defer
+2023-09-19 14:56:36,189 INFO    SenderThread:44445 [sender.py:send_request_defer():608] handle sender defer: 12
+2023-09-19 14:56:36,189 INFO    SenderThread:44445 [file_stream.py:finish():593] file stream finish called
+2023-09-19 14:56:37,004 INFO    SenderThread:44445 [file_stream.py:finish():597] file stream finish is done
+2023-09-19 14:56:37,004 INFO    SenderThread:44445 [sender.py:transition_state():612] send defer: 13
+2023-09-19 14:56:37,012 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: defer
+2023-09-19 14:56:37,012 INFO    HandlerThread:44445 [handler.py:handle_request_defer():170] handle defer: 13
+2023-09-19 14:56:37,013 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: defer
+2023-09-19 14:56:37,013 INFO    SenderThread:44445 [sender.py:send_request_defer():608] handle sender defer: 13
+2023-09-19 14:56:37,013 INFO    SenderThread:44445 [sender.py:transition_state():612] send defer: 14
+2023-09-19 14:56:37,014 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: defer
+2023-09-19 14:56:37,014 INFO    HandlerThread:44445 [handler.py:handle_request_defer():170] handle defer: 14
+2023-09-19 14:56:37,015 DEBUG   SenderThread:44445 [sender.py:send():379] send: final
+2023-09-19 14:56:37,015 DEBUG   SenderThread:44445 [sender.py:send():379] send: footer
+2023-09-19 14:56:37,016 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: defer
+2023-09-19 14:56:37,016 INFO    SenderThread:44445 [sender.py:send_request_defer():608] handle sender defer: 14
+2023-09-19 14:56:37,017 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-19 14:56:37,018 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: poll_exit
+2023-09-19 14:56:37,019 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: server_info
+2023-09-19 14:56:37,020 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: get_summary
+2023-09-19 14:56:37,022 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: server_info
+2023-09-19 14:56:37,028 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: sampled_history
+2023-09-19 14:56:37,049 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: job_info
+2023-09-19 14:56:37,234 DEBUG   SenderThread:44445 [sender.py:send_request():406] send_request: job_info
+2023-09-19 14:56:37,235 INFO    MainThread:44445 [wandb_run.py:_footer_history_summary_info():3481] rendering history
+2023-09-19 14:56:37,237 INFO    MainThread:44445 [wandb_run.py:_footer_history_summary_info():3513] rendering summary
+2023-09-19 14:56:37,238 INFO    MainThread:44445 [wandb_run.py:_footer_sync_info():3440] logging synced files
+2023-09-19 14:56:37,238 DEBUG   HandlerThread:44445 [handler.py:handle_request():144] handle_request: shutdown
+2023-09-19 14:56:37,238 INFO    HandlerThread:44445 [handler.py:finish():857] shutting down handler
+2023-09-19 14:56:38,050 INFO    WriterThread:44445 [datastore.py:close():294] close: /home/kwangrok/Downloads/VS_CODE/my_github/detr/wandb/run-20230919_144646-f2h2cqq4/run-f2h2cqq4.wandb
+2023-09-19 14:56:38,235 INFO    SenderThread:44445 [sender.py:finish():1552] shutting down sender
+2023-09-19 14:56:38,235 INFO    SenderThread:44445 [file_pusher.py:finish():159] shutting down file pusher
+2023-09-19 14:56:38,235 INFO    SenderThread:44445 [file_pusher.py:join():164] waiting for file pusher

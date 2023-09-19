@@ -16,6 +16,8 @@ from datasets import build_dataset, get_coco_api_from_dataset
 from engine import evaluate, train_one_epoch
 from models import build_model
 
+import wandb
+
 
 def get_args_parser():
     parser = argparse.ArgumentParser('Set transformer detector', add_help=False)
@@ -99,6 +101,11 @@ def get_args_parser():
     parser.add_argument('--world_size', default=1, type=int,
                         help='number of distributed processes')
     parser.add_argument('--dist_url', default='env://', help='url used to set up distributed training')
+    
+    parser.add_argument('--wdb_entity_name', default='jinlovespho')
+    parser.add_argument('--wdb_proj_name' )
+    parser.add_argument('--wdb_run_name')
+    
     return parser
 
 
@@ -188,14 +195,78 @@ def main(args):
             utils.save_on_master(coco_evaluator.coco_eval["bbox"].eval, output_dir / "eval.pth")
         return
 
+    wdb_config=dict(lr=args.lr, 
+                    lr_backbone=args.lr_backbone, 
+                    batch_size=args.batch_size, 
+                    weight_decay=args.weight_decay, 
+                    epochs=args.epochs, 
+                    lr_drop=args.lr_drop, 
+                    clip_max_norm=args.clip_max_norm, 
+                    frozen_weights=args.frozen_weights, 
+                    backbone=args.backbone, 
+                    dilation=args.dilation, 
+                    position_embedding=args.position_embedding, 
+                    enc_layers=args.enc_layers, 
+                    dec_layers=args.dec_layers, 
+                    dim_feedforward=args.dim_feedforward, 
+                    hidden_dim=args.hidden_dim, 
+                    dropout=args.dropout, 
+                    nheads=args.nheads, 
+                    num_queries=args.num_queries, 
+                    pre_norm=args.pre_norm, 
+                    masks=args.masks, 
+                    aux_loss=args.aux_loss, 
+                    set_cost_class=args.set_cost_class, 
+                    set_cost_bbox=args.set_cost_bbox, 
+                    set_cost_giou=args.set_cost_giou, 
+                    mask_loss_coef=args.mask_loss_coef, 
+                    dice_loss_coef=args.dice_loss_coef, 
+                    bbox_loss_coef=args.bbox_loss_coef, 
+                    giou_loss_coef=args.giou_loss_coef, 
+                    eos_coef=args.eos_coef, 
+                    dataset_file=args.dataset_file, 
+                    coco_path=args.coco_path, 
+                    coco_panoptic_path=args.coco_panoptic_path, 
+                    remove_difficult=args.remove_difficult, 
+                    output_dir=args.output_dir, 
+                    device=args.device, 
+                    seed=args.seed, 
+                    resume=args.resume, 
+                    start_epoch=args.start_epoch, 
+                    eval=args.eval, 
+                    num_workers=args.num_workers, 
+                    world_size=args.world_size, 
+                    dist_url=args.dist_url, 
+                    wdb_entity_name=args.wdb_entity_name, 
+                    wdb_proj_name=args.wdb_proj_name, 
+                    wdb_run_name=args.wdb_run_name, 
+                    distributed=args.distributed
+                    )
+    
+    wandb.login()
+    run_wandb = wandb.init( entity= args.wdb_entity_name , 
+                            project= args.wdb_proj_name , 
+                            name= args.wdb_run_name ,
+                            # notes='add explanation of this run',
+                            # job_type='train',                  
+                            )
+    
+    wandb.config.update(wdb_config)
+    
+      
     print("Start training")
     start_time = time.time()
     for epoch in range(args.start_epoch, args.epochs):
         if args.distributed:
             sampler_train.set_epoch(epoch)
+                   
+        # breakpoint()
+        is_train=True       # JINLOVESPHO for wandb logging purpose
         train_stats = train_one_epoch(
             model, criterion, data_loader_train, optimizer, device, epoch,
-            args.clip_max_norm)
+            args.clip_max_norm, is_train)
+        
+        
         lr_scheduler.step()
         if args.output_dir:
             checkpoint_paths = [output_dir / 'checkpoint.pth']
@@ -210,16 +281,43 @@ def main(args):
                     'epoch': epoch,
                     'args': args,
                 }, checkpoint_path)
-
+                
+        # breakpoint()
+        is_train=False
         test_stats, coco_evaluator = evaluate(
-            model, criterion, postprocessors, data_loader_val, base_ds, device, args.output_dir
+            model, criterion, postprocessors, data_loader_val, base_ds, device, args.output_dir, is_train
         )
-
+            
+        # print mAP
+        # coco_evaluator.accumulate()
+        # coco_evaluator.summarize()
+        # print( coco_evaluator.coco_eval['bbox'].stats)    # 얘랑 
+        # print( test_stats['coco_eval_bbox'] )             # 얘랑 똑같은 거였네 ㅋㅋ
+        
+        ap1 = 'AP_IoU=0.5:0.95'
+        ap2 = 'AP_IoU=0.5'
+        ap3 = 'AP_IoU=0.75'
+        ap4 = 'AP_small'
+        ap5 = 'AP_medium'
+        ap6 = 'AP_large'
+        
+        ap_dict = {
+            ap1: coco_evaluator.coco_eval['bbox'].stats[0],
+            ap2: coco_evaluator.coco_eval['bbox'].stats[1],
+            ap3: coco_evaluator.coco_eval['bbox'].stats[2],
+            ap4: coco_evaluator.coco_eval['bbox'].stats[3],
+            ap5: coco_evaluator.coco_eval['bbox'].stats[4],
+            ap6: coco_evaluator.coco_eval['bbox'].stats[5],
+        }
+        
+        
+        wandb.log( ap_dict )
         log_stats = {**{f'train_{k}': v for k, v in train_stats.items()},
                      **{f'test_{k}': v for k, v in test_stats.items()},
                      'epoch': epoch,
                      'n_parameters': n_parameters}
-
+        
+        
         if args.output_dir and utils.is_main_process():
             with (output_dir / "log.txt").open("a") as f:
                 f.write(json.dumps(log_stats) + "\n")
@@ -229,7 +327,7 @@ def main(args):
                 (output_dir / 'eval').mkdir(exist_ok=True)
                 if "bbox" in coco_evaluator.coco_eval:
                     filenames = ['latest.pth']
-                    if epoch % 50 == 0:
+                    if epoch % 25 == 0:
                         filenames.append(f'{epoch:03}.pth')
                     for name in filenames:
                         torch.save(coco_evaluator.coco_eval["bbox"].eval,

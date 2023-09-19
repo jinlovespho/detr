@@ -1,0 +1,23 @@
+Start training
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/main.py(264)main()
+-> is_train=True       # JINLOVESPHO for wandb logging purpose
+*** NameError: name 'is_train' is not defined
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/main.py(265)main()
+-> train_stats = train_one_epoch(
+True
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/main.py(266)main()
+-> model, criterion, data_loader_train, optimizer, device, epoch,
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/main.py(267)main()
+-> args.clip_max_norm, is_train)
+Traceback (most recent call last):
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/main.py", line 348, in <module>
+    main(args)
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/main.py", line 267, in main
+    args.clip_max_norm, is_train)
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/main.py", line 267, in main
+    args.clip_max_norm, is_train)
+  File "/home/kwangrok/anaconda3/envs/mm_torch113/lib/python3.9/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/kwangrok/anaconda3/envs/mm_torch113/lib/python3.9/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

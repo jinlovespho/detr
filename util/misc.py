@@ -23,6 +23,7 @@ if version.parse(torchvision.__version__) < version.parse('0.7'):
     from torchvision.ops import _new_empty_tensor
     from torchvision.ops.misc import _output_size
 
+import wandb
 
 class SmoothedValue(object):
     """Track a series of values and provide access to smoothed values over a
@@ -191,7 +192,7 @@ class MetricLogger(object):
     def add_meter(self, name, meter):
         self.meters[name] = meter
 
-    def log_every(self, iterable, print_freq, header=None):
+    def log_every(self, iterable, print_freq, header=None, is_train=True):
         i = 0
         if not header:
             header = ''
@@ -228,6 +229,22 @@ class MetricLogger(object):
                 eta_seconds = iter_time.global_avg * (len(iterable) - i)
                 eta_string = str(datetime.timedelta(seconds=int(eta_seconds)))
                 if torch.cuda.is_available():
+                    # 여기서 한 epoch 의 정보를 모두 출력하네 -> train과 val모두 동일하게 이 함수를 호출 
+                    
+                    # tmp_dict={}
+                    # for key, value in self.meters.items():
+                    #     tmp_dict[key]=value.value
+                    
+                    type_of = ''
+                    if is_train==True:
+                        type_of='training'
+                    else:
+                        type_of='validating'
+                                    
+                    wandb_log_dict = { f'{type_of}_{key}':value.value for key, value in self.meters.items() }
+                    wandb.log( wandb_log_dict )
+                    
+
                     print(log_msg.format(
                         i, len(iterable), eta=eta_string,
                         meters=str(self),

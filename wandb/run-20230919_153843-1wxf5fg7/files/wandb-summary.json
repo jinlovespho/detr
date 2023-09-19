@@ -1,0 +1,1 @@
+{"AP_IoU=0.5:0.95": 0.0, "AP_IoU=0.5": 0.0, "AP_IoU=0.75": 0.0, "AP_small": 0.0, "AP_medium": 0.0, "AP_large": 0.0, "_timestamp": 1695105879.467123, "_runtime": 355.618399143219, "_step": 0, "_wandb": {"runtime": 769}}

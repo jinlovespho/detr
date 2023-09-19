@@ -1,0 +1,51 @@
+Start training
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py(32)train_one_epoch()
+-> for samples, targets in metric_logger.log_every(data_loader, print_freq, header):
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(224)log_every()
+-> for obj in iterable:
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(225)log_every()
+-> data_time.update(time.time() - end)
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(226)log_every()
+-> yield obj
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(227)log_every()
+-> iter_time.update(time.time() - end)
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(228)log_every()
+-> if i % print_freq == 0 or i == len(iterable) - 1:
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(229)log_every()
+-> eta_seconds = iter_time.global_avg * (len(iterable) - i)
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(230)log_every()
+-> eta_string = str(datetime.timedelta(seconds=int(eta_seconds)))
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(231)log_every()
+-> if torch.cuda.is_available():
+'0:40:14'
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(232)log_every()
+-> print(log_msg.format(
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(233)log_every()
+-> i, len(iterable), eta=eta_string,
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(234)log_every()
+-> meters=str(self),
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(235)log_every()
+-> time=str(iter_time), data=str(data_time),
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(236)log_every()
+-> memory=torch.cuda.max_memory_allocated() / MB))
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(232)log_every()
+-> print(log_msg.format(
+Epoch: [0]  [  0/250]  eta: 0:40:14  lr: 0.000100  class_error: 100.00  loss: 73.0515 (73.0515)  loss_ce: 4.5679 (4.5679)  loss_bbox: 5.3465 (5.3465)  loss_giou: 2.1626 (2.1626)  loss_ce_0: 4.6168 (4.6168)  loss_bbox_0: 5.1822 (5.1822)  loss_giou_0: 2.2252 (2.2252)  loss_ce_1: 4.6735 (4.6735)  loss_bbox_1: 5.2828 (5.2828)  loss_giou_1: 2.2011 (2.2011)  loss_ce_2: 4.7306 (4.7306)  loss_bbox_2: 5.2595 (5.2595)  loss_giou_2: 2.1953 (2.1953)  loss_ce_3: 4.8561 (4.8561)  loss_bbox_3: 5.3054 (5.3054)  loss_giou_3: 2.1636 (2.1636)  loss_ce_4: 4.8219 (4.8219)  loss_bbox_4: 5.3040 (5.3040)  loss_giou_4: 2.1565 (2.1565)  loss_ce_unscaled: 4.5679 (4.5679)  class_error_unscaled: 100.0000 (100.0000)  loss_bbox_unscaled: 1.0693 (1.0693)  loss_giou_unscaled: 1.0813 (1.0813)  cardinality_error_unscaled: 95.7500 (95.7500)  loss_ce_0_unscaled: 4.6168 (4.6168)  loss_bbox_0_unscaled: 1.0364 (1.0364)  loss_giou_0_unscaled: 1.1126 (1.1126)  cardinality_error_0_unscaled: 95.7500 (95.7500)  loss_ce_1_unscaled: 4.6735 (4.6735)  loss_bbox_1_unscaled: 1.0566 (1.0566)  loss_giou_1_unscaled: 1.1005 (1.1005)  cardinality_error_1_unscaled: 95.7500 (95.7500)  loss_ce_2_unscaled: 4.7306 (4.7306)  loss_bbox_2_unscaled: 1.0519 (1.0519)  loss_giou_2_unscaled: 1.0977 (1.0977)  cardinality_error_2_unscaled: 95.7500 (95.7500)  loss_ce_3_unscaled: 4.8561 (4.8561)  loss_bbox_3_unscaled: 1.0611 (1.0611)  loss_giou_3_unscaled: 1.0818 (1.0818)  cardinality_error_3_unscaled: 95.7500 (95.7500)  loss_ce_4_unscaled: 4.8219 (4.8219)  loss_bbox_4_unscaled: 1.0608 (1.0608)  loss_giou_4_unscaled: 1.0783 (1.0783)  cardinality_error_4_unscaled: 95.7500 (95.7500)  time: 9.6562  data: 6.9922  max mem: 4789
+> /home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py(242)log_every()
+-> i += 1
+Traceback (most recent call last):
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/main.py", line 263, in <module>
+    main(args)
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/main.py", line 211, in main
+    train_stats = train_one_epoch(
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/engine.py", line 32, in train_one_epoch
+    for samples, targets in metric_logger.log_every(data_loader, print_freq, header):
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py", line 242, in log_every
+    time=str(iter_time), data=str(data_time)))
+  File "/home/kwangrok/Downloads/VS_CODE/my_github/detr/util/misc.py", line 242, in log_every
+    time=str(iter_time), data=str(data_time)))
+  File "/home/kwangrok/anaconda3/envs/mm_torch113/lib/python3.9/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/kwangrok/anaconda3/envs/mm_torch113/lib/python3.9/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
