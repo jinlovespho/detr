@@ -68,6 +68,7 @@ class ConvertCocoPolysToMask(object):
         boxes[:, 0::2].clamp_(min=0, max=w)
         boxes[:, 1::2].clamp_(min=0, max=h)
 
+        breakpoint()
         classes = [obj["category_id"] for obj in anno]
         classes = torch.tensor(classes, dtype=torch.int64)
 
@@ -149,8 +150,8 @@ def build(image_set, args):
     assert root.exists(), f'provided COCO path {root} does not exist'
     # mode = 'instances'
     PATHS = {
-        "train": (root / "images/train2017", root / "annotations" / f'my_instances_train2017_5k.json'),
-        "val": (root / "images/val2017", root / "annotations" / f'my_instances_val2017_1k.json'),
+        "train": (root / "images/train2017", root / "annotations" / f'instances_train2017.json'),
+        "val": (root / "images/val2017", root / "annotations" / f'instances_val2017.json'),
     }
 
     img_folder, ann_file = PATHS[image_set]
